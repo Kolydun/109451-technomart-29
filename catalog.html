@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy:Техномарт-каталог</title>
+</head>
+<body>
+<header class="main-header">
+  <section class="header-top">
+    <h1>
+      <a href="index.html">Техномарт</a><!--Заголовок-ссылка на главную страницу-->
+    </h1>
+    <p class="search-line">Поиска</p> <!--Форма поиска-->
+    <ul>
+      <li class="marks-head"><a href=""><p>Закладки</p></a></li> <!--Ссылка на закладки и кол-во закладок-->
+      <li class="cart-head"><a href=""><p>Корзина</p></a></li> <!--Ссылка на корзину и кол-во товаров-->
+      <li class="cart-confirm"><a href=""><p>Оформить заказ</p></a></li> <!--Ссылка на страницу оформления заказов-->
+    </ul>
+  </section>
+  <section class="header-middle">
+    <p class="header-description">Интернет-магазин <br> строительных материалов<br> и инструментов для ремонта</p>
+    <p class="header-info"><span class="header-tel">+7 (812) 555-05-55</span><br>г. Санкт-Петербург, ул. Б. Конюшенная,
+      д. 19/8</p>
+    <div><a href="">Равшан Джамшутович</a></div>
+    <ul>
+      <li><a href="" class="catalog-header-link">Мои заказы</a></li>
+      <li><a href="" class="catakog-header-link">Личный кабинет</a></li>
+    </ul>
+  </section>
+  <section class="header-navigation">
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="">Компания</a></li>
+        <li><a href="">Каталог</a></li>
+        <li><a href="">Новости</a></li>
+        <li><a href="">Спецпредложения</a></li>
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+    </nav>
+  </section>
+</header>
+<main class="catalog">
+  <ul class="bread-crumbs">
+    <li>
+      <a href="index.html">&#8962;</a>
+    </li>
+    <li>Каталог</li>
+    <li>Инструменты</li>
+    <li>Парфораторы</li>
+  </ul>
+  <h1>Перфораторы</h1>
+  <section class="catalog-top">
+    <p class="filter-heading">Сортировка</p>
+    <ul class="sort-list">
+      <li class="sort-name"><button type="button" class="sort-button">По цене</button> </li>
+      <li class="sort-name"><button type="button" class="sort-button">По типу</button> </li>
+      <li class="sort-name"><button type="button" class="sort-button">По функциям</button> </li>
+      <li class="sort-name"><button type="button" class="sort-button-up">&#9650;</button> </li>
+      <li class="sort-name"><button type="button" class="sort-button-down">&#9660;</button> </li>
+      <!--Проверить, как это можно реализовать!-->
+    </ul>
+    <section class="filters">
+      <div class="filter-heading">Фильтр:</div>
+      <div class="filter-price">Цена:<!--Тут будет форма ползунка--></div>
+      <div class="filter-brand">Производитель: <!--Тут будет фильтр-чекбокс производителей--></div>
+      <div class="filter-type">Питание: <!--Тут будет фильтр-кнопка--></div>
+       <button type="button" class="filter-button">Показать</button>
+    </section>
+
+  </section>
+  <section class="catalog-products">
+    <ul class="items">
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 9000<br></h3>
+        </a>
+        <p class="crossed">32500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button> <!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 3000<br></h3>
+        </a>
+        <p class="crossed">22250 Р.</p>
+        <button type="button" class="price-bordered">15500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 6000<br></h3>
+        </a>
+        <p class="crossed">30500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button><!--По нажатию будет всплывать модельное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 2000<br></h3>
+        </a>
+        <button type="button" class="price-bordered">12500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 9000<br></h3>
+        </a>
+        <p class="crossed">32500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button> <!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 3000<br></h3>
+        </a>
+        <p class="crossed">22250 Р.</p>
+        <button type="button" class="price-bordered">15500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 6000<br></h3>
+        </a>
+        <p class="crossed">30500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button><!--По нажатию будет всплывать модельное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 2000<br></h3>
+        </a>
+        <button type="button" class="price-bordered">12500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 9000<br></h3>
+        </a>
+        <p class="crossed">32500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button> <!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 3000<br></h3>
+        </a>
+        <p class="crossed">22250 Р.</p>
+        <button type="button" class="price-bordered">15500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 6000<br></h3>
+        </a>
+        <p class="crossed">30500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button><!--По нажатию будет всплывать модельное окно-->
+      </li>
+      <li class="item">
+        <a href=""><!--Ссылка на страницу товара-->
+          <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 2000<br></h3>
+        </a>
+        <button type="button" class="price-bordered">12500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+      </li>
+    </ul>
+    <ul class="page-numbers">
+      <li>
+        <a class="page-number">1</a>
+      </li>
+      <li>
+        <a href="" class="page-number">2</a>
+      </li>
+      <li>
+        <a href="" class="page-number">3</a>
+      </li>
+      <li>
+        <a href="" class="page-number">Следующая:</a>
+      </li>
+    </ul>
+ <!--О перфораторах!!!!!-->
+  </section>
+<section class="about-iten">
+
+</section>
+
+</main>
+
+<footer class="main-footer">
+  <section class="footer-info">
+    <h1 class="footer-heading">
+      <a href="index.html">Техномарт</a>
+    </h1>
+    <p class="footer-info">
+      г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+      <a href="tel:7 (812) 555-05-55" class="telephone-bottom">
+        7 (812) 555-05-55
+      </a>
+    </p>
+    <ul class="footer-menu">
+      <li class="navigation-norm"><a href="">Компания</a></li>
+      <li class="navigation-norm"><a href="">Новости</a></li>
+      <li class="navigation-norm"><a href="">Каталог</a></li>
+      <li class="navigation-norm"><a href="">Доставка</a></li>
+      <li class="navigation-norm"><a href="">Контакты</a></li>
+      <li class="navigation-yellow"><a href="">Материалы</a></li>
+      <li class="navigation-yellow"><a href="">Техника</a></li>
+      <li class="navigation-yellow"><a href="">Инструменты</a></li>
+      <li class="navigation-yellow"><a href="">Спецпредложения</a></li>
+    </ul>
+  </section>
+  <section class="footer-copyright">
+    <p class="copyright-text">&copy;2010-2019 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
+    <ul>
+      <li class="social-media"><a href=""><img src="https://via.placeholder.com/30x30" alt="ВК">Вконтакте</a></li>
+      <li class="social-media"><a href=""><img src="https://via.placeholder.com/30x30" alt="Большая Ф">Фейсбук</a></li>
+      <li class="social-media"><a href=""><img src="https://via.placeholder.com/30x30" alt="фотоапарат">Инстаграм</a></li>
+    </ul>
+    <p class="footer-small">Обратная связь:<br><a href="">mail@htmlacademy.ru</a></p>
+    <p class="footer-small">Разработано:<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+  </section>
+
+</footer>
+
+</body>
+</html>

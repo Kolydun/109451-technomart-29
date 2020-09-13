@@ -18,8 +18,13 @@
        </ul>
      </section>
      <section class="header-middle">
-       <p class="header-description">Интернет-магазин <br> строительных материалов<br> и инструментов для ремонта</p>
-       <p class="header-info"><span class="header-tel">+7 (812) 555-05-55</span><br>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+       <p class="header-description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+       <p class="header-info">
+         <span class="header-tel">
+           <a href="tel:7 (812) 555-05-55"> 7 (812) 555-05-55</a>
+         </span>
+         <br>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+       </p>
        <div><a href="">Войти</a></div>
        <div><a href="">Регистрация</a></div>
      </section>
@@ -28,7 +33,7 @@
         <ul>
           <li><a href="">Главная</a></li>
           <li><a href="">Компания</a></li>
-          <li><a href="">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="">Новости</a></li>
           <li><a href="">Спецпредложения</a></li>
           <li><a href="">Доставка</a></li>
@@ -41,15 +46,15 @@
     <main class="main-page">
       <section class="main-menu">
         <ul>
-          <li class="menu-1">
-            <h2 class="menu-h2">Материалы</h2>
+          <li class="menu-materials">
+            <h2 class="menu-title">Материалы</h2>
             <img src="https://via.placeholder.com/150x100" alt="Банка">
             <a href="" class="menu-link">На любой вкус</a>
           </li>
-          <li class="menu-2"><h2 class="menu-h2">Инструменты</h2><img src="https://via.placeholder.com/150x100" alt="Дрель"><a href="" class="menu-link">На все случаи</a></li>
-          <li class="menu-3"><h2 class="menu-h2">Техника</h2><img src="https://via.placeholder.com/150x100" alt="Трактор"><a href="" class="menu-link">Для стройки</a></li>
-          <li class="menu-4"><h2 class="menu-h2">Скидки 50%</h2><img src="https://via.placeholder.com/150x100" alt="Корзинка"><a href="" class="menu-link">На 350 товаров</a></li>
-          <li class="menu-5"><h2 class="menu-h2">Доставка</h2><img src="https://via.placeholder.com/150x100" alt="Машинка"><a href="" class="menu-link">Бесплатно</a></li>
+          <li class="menu-instruments"><h2 class="menu-title">Инструменты</h2><img src="https://via.placeholder.com/150x100" alt="Дрель"><a href="" class="menu-link">На все случаи</a></li>
+          <li class="menu-vehicles"><h2 class="menu-title">Техника</h2><img src="https://via.placeholder.com/150x100" alt="Трактор"><a href="" class="menu-link">Для стройки</a></li>
+          <li class="menu-discounts"><h2 class="menu-title">Скидки 50%</h2><img src="https://via.placeholder.com/150x100" alt="Корзинка"><a href="" class="menu-link">На 350 товаров</a></li>
+          <li class="menu-delivery"><h2 class="menu-title">Доставка</h2><img src="https://via.placeholder.com/150x100" alt="Машинка"><a href="" class="menu-link">Бесплатно</a></li>
         </ul>
         <div><img src="https://via.placeholder.com/150x100" alt="Слайдер"></div> <!--Тут будет слайдер, пока не знаю как его разметить-->
         <a href="" class="red-button">открыть каталог</a> <!--Ссылка на каталог-->
@@ -76,7 +81,7 @@
             <p class="crossed">22250 Р.</p>
             <button type="button" class="price-bordered">15500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
           </li>
-          <li>
+          <li class="item">
             <a href=""><!--Ссылка на страницу товара-->
               <img src="https://via.placeholder.com/150x100" alt="Перфоратор">
               <h3 class="item-name">Перфоратор BOSCH<br>FG 6000<br></h3>
@@ -113,31 +118,33 @@
         <h2 class="servise-font">Сервисы</h2>
         <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами!</p>
         <p class="services-text">Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <p>Доставка<br>Гарантия<br> Кредит</p>
+        <button type="button" class="services-buttons">Доставка</button>
         <h4>Доставка</h4>
         <p class="services-slider-text">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+          Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+          Ведь мы неплохо заработаем, поднимая его на ваш этаж!
         </p>
+        <button type="button" class="services-buttons">Гарантия</button>
+        <button type="button" class="services-buttons">Кредит</button>
         <!--Тут будет слайдер-->
         <p class="services-car"><img src="https://via.placeholder.com/150x100" alt="машинка"></p>
       </section>
       <section class="about-company">
         <h2 class="about-title">Компания "Техномарт"</h2>
         <p class="about-text">
-          Настоящий мужской шопинг начинается здась! Огромный выбор товаров для<br> ремонта и строительства не оставит равнодушными любителей сэкономить на<br> гастарбайтерах.
-          <br>Мы можем доставить ваш товар в самы отдаленные точки России!<br>Техномарт работает со многими транспортными компаниями:
+          Настоящий мужской шопинг начинается здась!
+          Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          Мы можем доставить ваш товар в самы отдаленные точки России! Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="about-list">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖэлДорЭкспедиция</li>
+          <li><a href="" class="delivery-links">Деловые линии</a></li>
+          <li><a href="" class="delivery-links">Автотрейдинг</a></li>
+          <li><a href="" class="delivery-links">ЖэлДорЭкспедиция</a></li>
         </ul>
         <a href="" class="red-button">Подробнее о компании</a>
         <h2 class="about-title">Контакты</h2>
         <p>Вы можете забрать торав сами, заехав в наш офис:</p>
         <a href=""><img src="https://via.placeholder.com/150x100" class="about-map" alt="Карта"></a>
-        <br>
-        <br>
         <a href="" class="red-button">Заблудились? Пишите нам!</a>
       </section>
     </main>
@@ -147,11 +154,16 @@
         <h1 class="footer-heading">
          <a href="index.html">Техномарт</a>
         </h1>
-        <p class="footer-info">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>7 (812) 555-05-55</p>
+        <p class="footer-info">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <a href="tel:7 (812) 555-05-55" class="telephone-bottom">
+            7 (812) 555-05-55
+          </a>
+        </p>
         <ul class="footer-menu">
           <li class="navigation-norm"><a href="">Компания</a></li>
           <li class="navigation-norm"><a href="">Новости</a></li>
-          <li class="navigation-norm"><a href="">Каталог</a></li>
+          <li class="navigation-norm"><a href="catalog.html">Каталог</a></li>
           <li class="navigation-norm"><a href="">Доставка</a></li>
           <li class="navigation-norm"><a href="">Контакты</a></li>
           <li class="navigation-yellow"><a href="">Материалы</a></li>
@@ -163,9 +175,15 @@
       <section class="footer-copyright">
         <p class="copyright-text">&copy;2010-2019 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
         <ul>
-          <li class="social-media"><a href=""><img src="https://via.placeholder.com/30x30" alt="ВК">Вконтакте</a></li>
-          <li class="social-media"><a href=""><img src="https://via.placeholder.com/30x30" alt="Большая Ф">Фейсбук</a></li>
-          <li class="social-media"><a href=""><img src="https://via.placeholder.com/30x30" alt="фотоапарат">Инстаграм</a></li>
+          <li class="social-media">
+            <a href=""><img src="https://via.placeholder.com/30x30" alt="ВК">Вконтакте</a>
+          </li>
+          <li class="social-media"><a href="">
+            <img src="https://via.placeholder.com/30x30" alt="Большая Ф">Фейсбук</a>
+          </li>
+          <li class="social-media">
+            <a href=""><img src="https://via.placeholder.com/30x30" alt="фотоапарат">Инстаграм</a>
+          </li>
         </ul>
         <p class="footer-small">Обратная связь:<br><a href="">mail@htmlacademy.ru</a></p>
         <p class="footer-small">Разработано:<br><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
