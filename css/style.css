@@ -36,7 +36,10 @@
   --light-dark-grey: #A9A9A9;
   --dark-red: #CA2C37;
   --darkest-red: #BA2732;
-  --darkest-green: #518534
+  --darkest-green: #518534;
+  --transparent-grey: rgba(197, 197, 197, 0.3);
+  --transparent-light-dark-grey: rgba(169, 169, 169, 0.3);
+  --transparent-white-3: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -230,16 +233,16 @@ nav.main-nav {
   line-height: 18px;
   text-transform: uppercase;
   padding: 10px;
-  background-color: var(--transparent-white);
+  background-color: var(--transparent-white-3);
   color: var(--basic-white);
 }
 
 .menu-link:hover {
-  background-color: var(--grey);
+  background-color: var(--transparent-grey);
 }
 
 .menu-link:focus {
-  background-color: var(--light-dark-grey);
+  background-color: var(--transparent-light-dark-grey);
 }
 
 
@@ -513,4 +516,22 @@ h4 {
 .footer-small a:focus {
   text-decoration: none;
   color: var(--basic-red);
+}
+
+/*Каталог*/
+div .name {
+  background-color: var(--basic-white);
+  height: 45px;
+  width: 299px;
+}
+
+.catalog-list {
+  display: inline-block;
+  padding: 10px;
+}
+.catalog-header-link:hover {
+  color: var(--basic-red);
+}
+.catalog-header-link:focus, .name:focus {
+  color: var(--grey);
 }
