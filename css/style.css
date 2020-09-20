@@ -613,9 +613,13 @@ div .name {
   border: none;
 }
 
-.sort-button-updown:hover, .sort-button:hover, .sort-button:active{
-  color: var(--basic-red);
+.sort-button-updown:hover, .sort-button:hover, .sort-button:hover{
+  color: var(--basic-black);
   text-decoration: none;
+}
+
+.sort-button-updown:focus, .sort-button:focus, .sort-button:focus {
+color: var(--basic-red);
 }
 
 /*Фильтры*/
@@ -672,6 +676,17 @@ div .name {
   width: 140px;
   background-color: var(--basic-white);
   text-transform: uppercase;
+}
+
+.normal-button:hover, .active-button:hover, .next-button:hover {
+  border-color: var(--grey);
+}
+.normal-button:focus, .active-button:focus, .next-button:focus {
+  border: 1px solid var(--basic-red);
+}
+
+.basic-type, .next-page {
+  color: var(--basic-black);
 }
 
 /*О перфораторах*/
