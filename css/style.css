@@ -26,6 +26,7 @@
   --light-blue-grey: #F3F7F9;
   --lighter-blue-grey: #F2F6F8;
   --green-shadow: #367315;
+  --very-light-grey: #E5E5E5;
   /*Special colors*/
   --dark-green: #5FBB2D;
   --transparent-white: rgba(255, 255, 255, 0.5);
@@ -40,13 +41,14 @@
   --transparent-grey: rgba(197, 197, 197, 0.3);
   --transparent-light-dark-grey: rgba(169, 169, 169, 0.3);
   --transparent-white-3: rgba(255, 255, 255, 0.3);
+  --transparent-black: rgba(0, 0, 0, 0.3);
 }
 
-body {
+body, header, footer {
   min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
@@ -306,7 +308,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.popular-items li {
+.popular-items li, .catalog-products li {
   list-style-type: none;
 }
 
@@ -494,6 +496,9 @@ h4 {
   opacity: 0.5;
   text-decoration: none;
 }
+.social-media-list{
+  list-style-type: none;
+}
 
 /*Нижний подвал*/
 .footer-copyright {
@@ -519,19 +524,167 @@ h4 {
 }
 
 /*Каталог*/
+.logo {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
 div .name {
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
   background-color: var(--basic-white);
   height: 45px;
   width: 299px;
 }
 
 .catalog-list {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
   display: inline-block;
   padding: 10px;
 }
+
 .catalog-header-link:hover {
   color: var(--basic-red);
 }
+
 .catalog-header-link:focus, .name:focus {
   color: var(--grey);
+}
+
+.breadcrumb {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  list-style-type: none;
+}
+
+.breadcrumb li {
+  display: inline-block;
+  margin: 5px;
+}
+
+/*Фильтры*/
+.catalog-heading {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: var(--light-blue-grey);
+  height: 89px;
+  width: 940px;
+}
+
+.catalog-top{
+  background-color: var(--light-beige);
+  height: 38px;
+  width: 700px;
+}
+
+.sort-list {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sort-list .sort-name {
+  display: inline-block;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.sort-button, .sort-button-updown {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: var(--transparent-black);
+  border-bottom: 1px dotted var(--basic-red);
+}
+.sort-button-updown {
+  border: none;
+}
+
+.sort-button-updown:hover, .sort-button:hover, .sort-button:active{
+  color: var(--basic-red);
+  text-decoration: none;
+}
+
+/*Фильтры*/
+.filters-list li {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.filter-price, .filter-brand, .filter-type {
+ font-weight: bold;
+}
+
+.filter-heading {
+  background-color: var(--light-beige);
+  width: 220px;
+}
+
+.filter-button {
+  background-color: transparent;
+  height: 38px;
+  width: 220px;
+  text-transform: uppercase;
+}
+
+/*Номера страниц*/
+.page-numbers li {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  list-style: none;
+  display: inline-block;
+  border: 1px solid var(--very-light-grey);
+}
+
+.normal-button, .active-button {
+  height: 38px;
+  width: 38px;
+}
+
+.normal-button {
+  background-color: var(--basic-white);
+}
+
+.active-button {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.next-button {
+  height: 38px;
+  width: 140px;
+  background-color: var(--basic-white);
+  text-transform: uppercase;
+}
+
+/*О перфораторах*/
+.about-items {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  background-color: var(--blue-grey);
+  height: 261px;
+  width: 1200px;
+}
+.about-heading {
+  text-transform: uppercase;
+  font-weight: normal;
 }
