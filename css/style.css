@@ -78,9 +78,6 @@ img {
   color: var(--basic-white);
 }
 
-.logo {
-  background-color: var(--basic-red);
-}
 /*Ссылки в шапке*/
 .header-link {
   color: var(--basic-white);
@@ -461,17 +458,6 @@ h4 {
   line-height: 24px;
 }
 
-.footer-heading {
-  background-color: var(--basic-red);
-  height: 68px;
-  width: 210px;
-  text-transform: uppercase;
-}
-
-.footer-heading a {
-  color: var(--basic-white);
-}
-
 .footer-menu li {
   font-weight: normal;
   font-size: 18px;
@@ -524,10 +510,6 @@ h4 {
 }
 
 /*Каталог*/
-.logo {
-  text-decoration: none;
-  color: var(--basic-white);
-}
 
 div .name {
   font-weight: normal;
@@ -702,4 +684,40 @@ color: var(--basic-red);
 .about-heading {
   text-transform: uppercase;
   font-weight: normal;
+}
+/*Декорации*/
+
+.perforator-2000 {
+  height: 112px;
+  width: 127px;
+}
+
+.perforator-6000 {
+  height: 128px;
+  width: 144px;
+}
+
+.perforator-3000 {
+  height: 112px;
+  width: 127px;
+}
+
+.perforator-9000 {
+  height: 164px;
+  width: 184px;
+}
+
+.logo-picture {
+  height: 47px;
+  width: 220px;
+}
+
+.logo-picture-footer {
+  height: 68px;
+  width: 220px;
+}
+
+.brand-img {
+  height: 145px;
+  width: 220px;
 }
