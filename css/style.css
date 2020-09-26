@@ -707,7 +707,8 @@ color: var(--basic-red);
   width: 184px;
 }
 
-.logo-picture {
+.logo-picture-header {
+  background-color: var(--basic-red);
   height: 47px;
   width: 220px;
 }
