@@ -42,6 +42,7 @@
   --transparent-light-dark-grey: rgba(169, 169, 169, 0.3);
   --transparent-white-3: rgba(255, 255, 255, 0.3);
   --transparent-black: rgba(0, 0, 0, 0.3);
+  --white-grey: #EAEAEA;
 }
 
 body, header, footer {
@@ -56,6 +57,11 @@ body, header, footer {
   background-color: var(--basic-white);
 }
 
+.page {
+  height: 100%;
+  margin: 0 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -66,6 +72,13 @@ img {
   /*Верх шапки*/
 }
 
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 .main-header {
   font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
@@ -74,11 +87,15 @@ img {
 }
 
 .header-top {
-  background-color: var(--background-blue);
   color: var(--basic-white);
 }
 
 /*Ссылки в шапке*/
+.header-links {
+  padding-inline-start: 0;
+
+}
+
 .header-link {
   color: var(--basic-white);
 }
@@ -86,17 +103,14 @@ img {
 .header-links li {
   list-style-type: none;
   display: inline;
-  margin-right: 5px;
   padding: 5px;
 }
 .header-links li {
   display: inline-block;
-  /*height: 42px;
-  width: 150px;*/
+  margin: 0;
+  padding: 0;
 }
-.header-link {
-  padding: 20px;
-}
+
  .cart-header a:focus,.marks-header a:focus {
   background-color: var(--darker-blue);
   color: var(--transparent-white);
@@ -119,10 +133,6 @@ img {
 }
 
 /*Средняя часть шапки*/
-.header-middle {
-  background-color: var(--light-blue-grey);
-  margin-top: -20px;
-}
 
 .header-middle a {
   color: var(--basic-black);
@@ -153,15 +163,28 @@ img {
   line-height: 30px;
 }
 
-div.login, div.registration {
-  padding: 5px;
+.header-tel {
+ border: 3px solid var(--basic-white);
+  padding: 8px;
+}
+
+.login, .registration {
   background-color: var(--basic-white);
   border: 1px solid black;
-  font-size: 21px;
-  line-height: 21px;
   height: 45px;
   width: 121px;
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.login, .registration {
+  vertical-align: middle;
   text-align: center;
+}
+
+.button-link {
+  font-size: 21px;
+  line-height: 45px;
 }
 
 .login a:hover, .registration a:hover {
@@ -172,36 +195,46 @@ div.login, div.registration {
   color: var(--grey);
 }
 
-/*div.login {
-  vertical-align: 50px;
-}*/
+
 /*Главная навигация*/
-nav.main-nav {
+/*nav.main-nav {
   background-color: var(--background-lighter-blue);
   height: 60px;
   width: 940px;
-}
+}*/
 .navigation {
-  padding-left: 53px;
-  padding-right: 53px;
-  padding-bottom: 20px;
-  padding-top: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
+  column-gap: 0;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
 }
-.navigation li {
+
+.nav-item {
+  margin: 0;
+  padding: 0;
+
+}
+/*.navigation li {
   display: inline-block;
-}
+}*/
 
 .navigation a {
   color: var(--basic-white);
-  font-weight: normal;
+  font-style: normal;
   font-size: 18px;
   line-height: 24px;
-  padding: 15px;
+  padding: 16px 24px 20px 27px;
   text-align: center;
+  font-weight: 400;
 }
 
 .nav-item :hover {
   background-color: var(--background-blue);
+  background-size: 60px 120px;
 }
 
 .nav-item :focus {
@@ -219,7 +252,16 @@ nav.main-nav {
 }
 .menu{
   list-style-type: none;
+  padding: 0 0;
+  margin: 59px auto;
 }
+
+.menu li {
+  padding: 0 0;
+  margin: 0 0;
+
+}
+
 .menu-title {
   font-weight: bold;
   font-size: 24px;
@@ -307,13 +349,16 @@ h2 {
 
 .popular-items li, .catalog-products li {
   list-style-type: none;
+
 }
 
 .item {
   height: 318px;
   width: 220px;
   border: 1px solid;
-  margin: 5px;
+  border-color: var(--white-grey);
+  margin: 0 0;
+
 }
 
 .crossed {
@@ -345,13 +390,21 @@ h2 {
 }
 
 .brands li {
-  display: inline;
   list-style-type: none;
 }
 
+.brand {
+  margin: 0 auto;
+  padding: 0 0;
+  max-width: max-content;
+}
+.brands {
+  margin: 0 auto;
+  padding: 0 0;
+
+}
 /*Cервисы*/
 .services {
-  background-color: var(--blue-grey);
   color: var(--basic-black);
   font-weight: normal;
   font-size: 13px;
@@ -370,6 +423,8 @@ h2 {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  width: 400px;
+  height: 49px;
 }
 
 h4 {
@@ -426,7 +481,10 @@ h4 {
 
 .delivery-list {
   list-style-type: none;
+  padding: 0;
 }
+
+
 
 .delivery-links {
   font-weight: normal;
@@ -444,7 +502,6 @@ h4 {
 
 /*Подвал*/
 .footer-info {
-  background-color: var(--background-lighter-blue);
   color: var(--basic-white);
 }
 
@@ -457,6 +514,13 @@ h4 {
   font-size: 18px;
   line-height: 24px;
 }
+
+.footer-menu {
+  padding: 0;
+  margin-block-end: 0;
+}
+
+
 
 .footer-menu li {
   font-weight: normal;
@@ -482,8 +546,14 @@ h4 {
   opacity: 0.5;
   text-decoration: none;
 }
-.social-media-list{
+.social-media-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.social-media {
+  display: inline-block;
 }
 
 /*Нижний подвал*/
@@ -492,12 +562,23 @@ h4 {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  background-color: var(--background-blue);
   color: var(--basic-white);
+}
+
+.footer-heading {
+  margin-block-start: 0;
+}
+
+.copyright-text {
+  margin-block-start: 0;
 }
 
 .footer-copyright a {
   color: var(--very-light-orange);
+}
+
+.footer-small {
+  margin-block-end: 0;
 }
 
 .footer-small a:hover {
@@ -707,10 +788,15 @@ color: var(--basic-red);
   width: 184px;
 }
 
-.logo-picture-header {
-  background-color: var(--basic-red);
+.logo-header {
+  margin: 0;
+}
+
+.logo-container {
+  background-image: url("../img/red-container-logo.png");
   height: 47px;
   width: 220px;
+  text-align: center;
 }
 
 .logo-picture-footer {
@@ -718,7 +804,208 @@ color: var(--basic-red);
   width: 220px;
 }
 
+.logo-picture-text {
+  width: 108px;
+}
+
 .brand-img {
   height: 145px;
   width: 220px;
 }
+
+/*Гриды для основной страницы*/
+
+.header-top-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 940px;
+  height: 47px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+
+.header-top-info {
+  text-align: center;
+}
+
+.header-bar {
+  background-color: var(--background-blue);
+}
+
+.main-nav-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  background-color: var(--background-lighter-blue);
+  margin: 0 auto;
+  padding: 0;
+  width: 940px;
+}
+
+.header-middle-bar {
+  background-color: var(--light-blue-grey);
+}
+
+.header-middle-wrapper {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 1fr 60px 60px;
+  gap: 20px;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 940px;
+}
+
+/*Гриды для мейнов*/
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 59px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.slider {
+grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+.popular {
+  display: grid;
+  width: 940px;
+  margin: 59px auto;
+  padding: 0;
+  grid-template-rows: 89px 318px;
+  gap: 20px;
+
+}
+
+.popular-menu {
+  grid-column: 1 / -1;
+}
+.popular-items {
+  margin: 0 auto;
+  padding: 0 0;
+  display: grid;
+  width: 940px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.item-first {
+  grid-column: 1 / 2;
+}
+
+.item-second {
+  grid-column: 2 / 3;
+
+}
+
+.item-third {
+  grid-column: 3 / 4;
+}
+
+.popular-brands {
+  display: grid;
+  width: 940px;
+  margin: auto;
+  padding: 0;
+  grid-template-rows: 89px 318px;
+  gap: 20px;
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 940px;
+}
+
+/*Сервисы*/
+
+.services-bar {
+  background-color: var(--blue-grey);
+}
+
+.services-wrapper {
+  display: grid;
+  width: 940px;
+  margin: 59px auto;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*О компании*/
+
+.about-company {
+  width: 940px;
+  display: grid;
+  margin-bottom: 59px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  grid-template-columns: 460px 460px;
+  gap: 20px;
+}
+
+.about-right {
+  text-align: right;
+}
+
+.about-left {
+  text-align: left;
+}
+/*Подвал*/
+
+
+.footer-info-bar {
+  background-color: var(--background-lighter-blue);
+}
+
+.footer-info-wrapper {
+  display: grid;
+  width: 940px;
+  margin: 0 auto;
+  grid-template-columns: 360px 560px;
+  grid-template-rows: 1fr;
+}
+
+.copyright-bar {
+  background-color: var(--background-blue);
+}
+
+.copyright-wrapper {
+  display: grid;
+  width: 940px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.copyright-contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.copyright-left {
+  position: relative
+}
+
+.copyright-left p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%)
+}
+
