@@ -54,7 +54,7 @@
               <li class="nav-item"><a class="nav-link" href="">Компания</a></li>
               <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
               <li class="nav-item"><a class="nav-link" href="">Новости</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Спецпредложения</a></li>
+              <li class="nav-item"><a class="nav-link special" href="">Спецпредложения</a></li>
               <li class="nav-item"><a class="nav-link" href="">Доставка</a></li>
               <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
             </ul>
@@ -66,148 +66,226 @@
 </header>
 
 <main>
-    <section class="main-menu">
-      <ul class="menu">
-        <li class="menu-materials">
-          <h2 class="menu-title">Материалы</h2>
-          <a href="" class="menu-link">
-            <span class="link-text">На любой вкус</span>
-          </a>
-          <img src="https://via.placeholder.com/40x40" alt="Банка">
-        </li>
-        <li class="menu-instruments"><h2 class="menu-title">Инструменты</h2>
-          <a href="" class="menu-link">
-            <span class="link-text">На все случаи</span>
-          </a>
-          <img src="https://via.placeholder.com/40x40" alt="Дрель">
-        </li>
-        <li class="menu-vehicles"><h2 class="menu-title">Техника</h2>
-          <a href="" class="menu-link">
-            <span class="link-text">Для стройки</span>
-          </a>
-          <img src="https://via.placeholder.com/40x40" alt="Трактор">
-        </li>
-        <li class="slider">
-          <img src="img/slider-worker.jpg" height="266" width="620" alt="Рабочий с перфоратором">
-          <!--Тут будет слайдер, пока не знаю как его разметить-->
-          <a href="" class="red-button">открыть каталог</a> <!--Ссылка на каталог-->
-          <button type="button" class="button-left" disabled>Назад</button> <!--Кнопки будут на самом слайдере-->
-          <button type="button" class="button-right">Вперед</button> <!--Кнопки будут на самом слайдере-->
-        </li>
-        <li class="menu-discounts"><h2 class="menu-title">Скидки 50%</h2>
-          <a href="" class="menu-link">
-            <span class="link-text">На 350 товаров</span>
-          </a>
-          <img src="https://via.placeholder.com/40x40" alt="Корзинка">
-        </li>
-        <li class="menu-delivery"><h2 class="menu-title">Доставка</h2>
-          <a href="" class="menu-link">
-            <span class="link-text">Бесплатно</span>
-          </a>
-          <img src="https://via.placeholder.com/40x40" alt="Машинка">
-        </li>
-      </ul>
-    </section>
-    <section class="popular">
-      <div class="popular-menu">
-        <h2 class="main-popular">Популярные товары:</h2>
-        <a href="" class="red-button">Все популярные товары</a>
-      </div>
-      <ul class="popular-items">
-        <li class="item item-first">
-          <img src="img/BFG-9000.jpg" width="184" height="164" alt="Перфоратор" class="perforator-9000">
-          <h3 class="item-name">Перфоратор BOSCH<br>FG 9000<br></h3>
-          <p class="crossed">32500 Р.</p>
-          <button type="button" class="price-bordered">25500 Р.</button>
+  <section class="main-menu">
+    <ul class="menu">
+      <li class="menu-materials">
+        <h2 class="menu-title">Материалы</h2>
+        <a href="" class="menu-link">
+          <span class="link-text">На любой вкус</span>
+        </a>
+        <img src="https://via.placeholder.com/40x40" alt="Банка">
+      </li>
+      <li class="menu-instruments"><h2 class="menu-title">Инструменты</h2>
+        <a href="" class="menu-link">
+          <span class="link-text">На все случаи</span>
+        </a>
+        <img src="https://via.placeholder.com/40x40" alt="Дрель">
+      </li>
+      <li class="menu-vehicles"><h2 class="menu-title">Техника</h2>
+        <a href="" class="menu-link">
+          <span class="link-text">Для стройки</span>
+        </a>
+        <img src="https://via.placeholder.com/40x40" alt="Трактор">
+      </li>
+      <li class="slider">
+        <img src="img/slider-worker.jpg" height="266" width="620" alt="Рабочий с перфоратором">
+        <!--Тут будет слайдер, пока не знаю как его разметить-->
+        <a href="" class="red-button">открыть каталог</a> <!--Ссылка на каталог-->
+        <button type="button" class="button-left" disabled>Назад</button> <!--Кнопки будут на самом слайдере-->
+        <button type="button" class="button-right">Вперед</button> <!--Кнопки будут на самом слайдере-->
+      </li>
+      <li class="menu-discounts"><h2 class="menu-title">Скидки 50%</h2>
+        <a href="" class="menu-link">
+          <span class="link-text">На 350 товаров</span>
+        </a>
+        <img src="https://via.placeholder.com/40x40" alt="Корзинка">
+      </li>
+      <li class="menu-delivery"><h2 class="menu-title">Доставка</h2>
+        <a href="" class="menu-link">
+          <span class="link-text">Бесплатно</span>
+        </a>
+        <img src="https://via.placeholder.com/40x40" alt="Машинка">
+      </li>
+    </ul>
+  </section>
+  <section class="popular">
+    <div class="popular-menu">
+      <h2 class="main-popular">Популярные товары:</h2>
+      <a href="" class="red-button">Все популярные товары</a>
+    </div>
+    <div class="popular-items-container">
+    <ul class="popular-items">
+      <li class="item item-first">
+        <img src="img/BFG-9000.jpg" width="184" height="164" alt="Перфоратор" class="perforator-9000">
+        <h3 class="item-name">Перфоратор BOSCH<br>FG 9000<br></h3>
+        <p class="crossed">32500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button>
+        <!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item item-second">
+        <div class="item-content">
+          <img src="img/BFG-3000.jpg" width="127" height="112" alt="Перфоратор" class="perforator-3000">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 3000<br></h3>
+          <p class="crossed">22250 Р.</p>
+          <button type="button" class="price-bordered">15500 Р.</button>
           <!--По нажатию будет всплывать модaльное окно-->
-        </li>
-        <li class="item item-second">
-          <div class="item-content">
-            <img src="img/BFG-3000.jpg" width="127" height="112" alt="Перфоратор" class="perforator-3000">
-            <h3 class="item-name">Перфоратор BOSCH<br>FG 3000<br></h3>
-            <p class="crossed">22250 Р.</p>
-            <button type="button" class="price-bordered">15500 Р.</button>
-            <!--По нажатию будет всплывать модaльное окно-->
-          </div>
-        </li>
-        <li class="item item-third">
-          <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class="perforator-6000">
-          <h3 class="item-name">Перфоратор BOSCH<br>FG 6000<br></h3>
-          <p class="crossed">30500 Р.</p>
-          <button type="button" class="price-bordered">25500 Р.</button><!--По нажатию будет всплывать модельное окно-->
-        </li>
-        <li class="item item-last">
-          <img src="img/BFG-2000.jpg" width="127" height="112" alt="Перфоратор" class="perforator-2000">
-          <h3 class="item-name">Перфоратор BOSCH<br>FG 2000<br></h3>
-          <button type="button" class="price-bordered">12500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
-        </li>
-      </ul>
-    </section>
-    <section class="popular-brands">
-      <div class="brands-menu">
-        <h2 class="main-popular">Популярные производители:</h2>
-        <a href="" class="red-button">Все производители</a>
-      </div>
-      <ul class="brands">
-        <li class="brand">
-          <a href="">
-            <img src="img/Bosh-logo.png" height="145" width="220" class="brand-img" alt="Bosch">
-          </a>
-        </li>
-        <li class="brand">
-          <a href="">
-            <img src="img/Makitta-logo.png" height="145" width="220" class="brand-img" alt="Makita">
-          </a>
-        </li>
-        <li class="brand">
-          <a href="">
-            <img src="img/DeWalt-logo.png" height="145" width="220" class="brand-img" alt="DeWalt">
-          </a>
-        </li>
-        <li class="brand">
-          <a href="">
-            <img src="img/Interskol-logo.png" height="145" width="220" class="brand-img" alt="Интерскол">
-          </a>
-        </li>
-        <li class="brand">
-          <a href="">
-            <img src="img/Hitachi-logo.png" class="brand-img" alt="Hitachi">
-          </a>
-        </li>
-        <li class="brand">
-          <a href="">
-            <img src="img/LG-logo.png" height="145" width="220" class="brand-img" alt="LG">
-          </a>
-        </li>
-        <li class="brand">
-          <a href="">
-            <img src="img/AEG-logo.png" height="145" width="220" class="brand-img" alt="AEG">
-          </a>
-        </li>
-        <li class="brand">
-          <a href=""><img src="img/Metabo-logo.png" class="brand-img" alt="Metabo">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="services">
-      <div class="services-bar">
-        <div class="services-wrapper">
+        </div>
+      </li>
+      <li class="item item-third">
+        <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class="perforator-6000">
+        <h3 class="item-name">Перфоратор BOSCH<br>FG 6000<br></h3>
+        <p class="crossed">30500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button><!--По нажатию будет всплывать модельное окно-->
+      </li>
+      <li class="item item-last">
+        <img src="img/BFG-2000.jpg" width="127" height="112" alt="Перфоратор" class="perforator-2000">
+        <h3 class="item-name">Перфоратор BOSCH<br>FG 2000<br></h3>
+        <button type="button" class="price-bordered">12500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+
+      <li class="item item-first">
+        <img src="img/BFG-9000.jpg" width="184" height="164" alt="Перфоратор" class="perforator-9000">
+        <h3 class="item-name">Перфоратор BOSCH<br>FG 9000<br></h3>
+        <p class="crossed">32500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button>
+        <!--По нажатию будет всплывать модaльное окно-->
+      </li>
+      <li class="item item-second">
+        <div class="item-content">
+          <img src="img/BFG-3000.jpg" width="127" height="112" alt="Перфоратор" class="perforator-3000">
+          <h3 class="item-name">Перфоратор BOSCH<br>FG 3000<br></h3>
+          <p class="crossed">22250 Р.</p>
+          <button type="button" class="price-bordered">15500 Р.</button>
+          <!--По нажатию будет всплывать модaльное окно-->
+        </div>
+      </li>
+      <li class="item item-third">
+        <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class="perforator-6000">
+        <h3 class="item-name">Перфоратор BOSCH<br>FG 6000<br></h3>
+        <p class="crossed">30500 Р.</p>
+        <button type="button" class="price-bordered">25500 Р.</button><!--По нажатию будет всплывать модельное окно-->
+      </li>
+      <li class="item item-last">
+        <img src="img/BFG-2000.jpg" width="127" height="112" alt="Перфоратор" class="perforator-2000">
+        <h3 class="item-name">Перфоратор BOSCH<br>FG 2000<br></h3>
+        <button type="button" class="price-bordered">12500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+      </li>
+    </ul>
+    </div>
+  </section>
+  <section class="popular-brands">
+    <div class="brands-menu">
+      <h2 class="main-popular">Популярные производители:</h2>
+      <a href="" class="red-button">Все производители</a>
+    </div>
+    <ul class="brands">
+      <li class="brand">
+        <a href="">
+          <img src="img/Bosh-logo.png" height="145" width="220" class="brand-img" alt="Bosch">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/Makitta-logo.png" height="145" width="220" class="brand-img" alt="Makita">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/DeWalt-logo.png" height="145" width="220" class="brand-img" alt="DeWalt">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/Interskol-logo.png" height="145" width="220" class="brand-img" alt="Интерскол">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/Hitachi-logo.png" class="brand-img" alt="Hitachi">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/LG-logo.png" height="145" width="220" class="brand-img" alt="LG">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/AEG-logo.png" height="145" width="220" class="brand-img" alt="AEG">
+        </a>
+      </li>
+      <li class="brand">
+        <a href=""><img src="img/Metabo-logo.png" class="brand-img" alt="Metabo">
+        </a>
+      </li>
+
+      <li class="brand">
+        <a href="">
+          <img src="img/Bosh-logo.png" height="145" width="220" class="brand-img" alt="Bosch">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/Makitta-logo.png" height="145" width="220" class="brand-img" alt="Makita">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/DeWalt-logo.png" height="145" width="220" class="brand-img" alt="DeWalt">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/Interskol-logo.png" height="145" width="220" class="brand-img" alt="Интерскол">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/Hitachi-logo.png" class="brand-img" alt="Hitachi">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/LG-logo.png" height="145" width="220" class="brand-img" alt="LG">
+        </a>
+      </li>
+      <li class="brand">
+        <a href="">
+          <img src="img/AEG-logo.png" height="145" width="220" class="brand-img" alt="AEG">
+        </a>
+      </li>
+      <li class="brand">
+        <a href=""><img src="img/Metabo-logo.png" class="brand-img" alt="Metabo">
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="services">
+    <div class="services-bar">
+      <div class="services-wrapper">
+        <div class="services-header">
           <h2 class="services-font">Сервисы</h2>
           <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </div>
+        <div class="services-buttons-container">
+          <div class="buttons-container">
+            <button type="button" class="services-buttons">Доставка</button>
+            <button type="button" class="services-buttons">Гарантия</button>
+            <button type="button" class="services-buttons">Кредит</button>
+          </div>
+        </div>
+        <div class="services-description">
           <h4>Доставка</h4>
-          <p class="services-slider-text">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-            Ведь мы неплохо заработаем, поднимая его на ваш этаж!
-          </p>
-          <button type="button" class="services-buttons">Доставка</button>
-          <button type="button" class="services-buttons">Гарантия</button>
-          <button type="button" class="services-buttons">Кредит</button>
-          <!--Тут будет слайдер-->
-          <p class="services-car"><img src="https://via.placeholder.com/150x100" alt="машинка"></p>
+          <div class="services-description-text">
+            <p class="services-slider-text">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+            </p>
+          </div>
+          <div class="services-car"><img src="https://via.placeholder.com/150x100" alt="машинка"></div>
         </div>
       </div>
+    </div>
     </section>
     <section class="about-company">
       <div class="about-left">
@@ -255,15 +333,15 @@
           </div>
           <div class="footer-info-right">
             <ul class="footer-menu">
-              <li class="navigation-norm"><a href="">Компания</a></li>
+              <li class="navigation-norm navigation-norm-first"><a href="">Компания</a></li>
               <li class="navigation-norm"><a href="">Новости</a></li>
               <li class="navigation-norm"><a href="catalog.html">Каталог</a></li>
               <li class="navigation-norm"><a href="">Доставка</a></li>
-              <li class="navigation-norm"><a href="">Контакты</a></li>
-              <li class="navigation-yellow"><a href="">Материалы</a></li>
+              <li class="navigation-norm navigation-norm-last"><a href="">Контакты</a></li>
+              <li class="navigation-yellow navigation-yellow-first"><a href="">Материалы</a></li>
               <li class="navigation-yellow"><a href="">Техника</a></li>
               <li class="navigation-yellow"><a href="">Инструменты</a></li>
-              <li class="navigation-yellow"><a href="">Спецпредложения</a></li>
+              <li class="navigation-yellow navigation-yellow-last"><a href="">Спецпредложения</a></li>
             </ul>
           </div>
         </div>
@@ -287,8 +365,8 @@
             <a href=""><img src="img/Instagram.png" width="44" height="44" alt="Инстаграм"></a>
           </div>
           <div class="copyright-contacts">
-            <p class="footer-small">Обратная связь:<br><a href="">mail@htmlacademy.ru</a></p>
-            <p class="footer-small">Разработано:<br><a
+            <p class="footer-small footer-small-left">Обратная связь:<br><a href="">mail@htmlacademy.ru</a></p>
+            <p class="footer-small footer-small-right">Разработано:<br><a
               href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </p>
           </div>

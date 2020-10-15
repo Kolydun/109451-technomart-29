@@ -91,9 +91,27 @@ img {
 }
 
 /*Ссылки в шапке*/
+
 .header-links {
   padding-inline-start: 0;
 
+}
+
+.header-links li a {
+  display: inline-block;
+  line-height: 42px;
+  padding: 0 25px;
+}
+
+.header-link-comfirm {
+  line-height: 42px;
+  display: inline-block;
+  padding: 0 19px;
+}
+
+.search-line {
+  margin-right: 203px;
+  margin-left: 20px;
 }
 
 .header-link {
@@ -103,12 +121,10 @@ img {
 .header-links li {
   list-style-type: none;
   display: inline;
-  padding: 5px;
 }
-.header-links li {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+
+.marks-header, .cart-header {
+  margin: 0 15px;
 }
 
  .cart-header a:focus,.marks-header a:focus {
@@ -149,11 +165,15 @@ img {
   line-height: 23px;
   height: 71px;
   width: 197px;
+  margin: 0;
+  margin-left: 30px;
+  margin-top: 42.5px;
 }
 
 .header-info {
   color: var(--background-lighter-blue);
   font-size: 14px;
+  margin-block-start: 0;
 }
 
 .header-tel a {
@@ -166,20 +186,26 @@ img {
 .header-tel {
  border: 3px solid var(--basic-white);
   padding: 8px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-top: 46px;
 }
 
 .login, .registration {
   background-color: var(--basic-white);
-  border: 1px solid black;
   height: 45px;
   width: 121px;
   vertical-align: middle;
-  margin-top: 20px;
+  margin-top: 46px;
 }
 
 .login, .registration {
   vertical-align: middle;
   text-align: center;
+}
+
+.login {
+  margin-right: 10px;
 }
 
 .button-link {
@@ -226,8 +252,6 @@ img {
   color: var(--basic-white);
   font-style: normal;
   font-size: 18px;
-  line-height: 24px;
-  padding: 16px 24px 20px 27px;
   text-align: center;
   font-weight: 400;
 }
@@ -296,7 +320,10 @@ img {
   text-transform: uppercase;
   height: 38px;
   width: 192px;
-  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .red-button:hover {
@@ -347,6 +374,14 @@ h2 {
   text-transform: uppercase;
 }
 
+.popular-menu a {
+  margin-right: 14px;
+}
+
+.popular-menu h2 {
+  margin-left: 28px;
+}
+
 .popular-items li, .catalog-products li {
   list-style-type: none;
 
@@ -387,6 +422,17 @@ h2 {
 .brands-menu {
   background-color: var(--milk-white);
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brands-menu a {
+  margin-right: 19px;
+}
+
+.brands-menu h2 {
+  margin-left: 28px;
 }
 
 .brands li {
@@ -394,7 +440,7 @@ h2 {
 }
 
 .brand {
-  margin: 0 auto;
+  margin: 0;
   padding: 0 0;
   max-width: max-content;
 }
@@ -509,6 +555,11 @@ h4 {
   color: var(--light-blue-grey);
 }
 
+.footer-text {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
 .telephone-bottom a {
   font-weight: normal;
   font-size: 18px;
@@ -579,6 +630,11 @@ h4 {
 
 .footer-small {
   margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.footer-small-right {
+  margin-left: 51px;
 }
 
 .footer-small a:hover {
@@ -793,10 +849,17 @@ color: var(--basic-red);
 }
 
 .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../img/red-container-logo.png");
   height: 47px;
   width: 220px;
   text-align: center;
+}
+
+.logo-container img {
+  padding-bottom: 10px;
 }
 
 .logo-picture-footer {
@@ -813,23 +876,35 @@ color: var(--basic-red);
   width: 220px;
 }
 
-/*Гриды для основной страницы*/
+/*Гриды флексы для основной страницы*/
 
 .header-top-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: flex-start;
   width: 940px;
-  height: 47px;
+  height: 42px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.header-buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+.header-links {
+  list-style: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  height: 42px;
+  display: flex;
+  align-items: center;
 }
 
+.header-buttons {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.header-top-text {
+  display: flex;
+}
 
 .header-top-info {
   text-align: center;
@@ -837,14 +912,37 @@ color: var(--basic-red);
 
 .header-bar {
   background-color: var(--background-blue);
+  height: 42px;
 }
 
-.main-nav-wrapper {
+/*.main-nav-wrapper {
   display: grid;
   grid-template-columns: 1fr min-content;
   background-color: var(--background-lighter-blue);
   margin: 0 auto;
   padding: 0;
+  width: 940px;
+}*/
+
+.special{
+  padding: 0 10px;
+}
+
+.main-nav ul {
+  padding: 0 20px;
+}
+
+.nav-link{
+  display: inline-block;
+  width: 100%;
+  line-height: 60px;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: var(--background-lighter-blue);
   width: 940px;
 }
 
@@ -887,21 +985,25 @@ grid-column: 1 / 3;
   width: 940px;
   margin: 59px auto;
   padding: 0;
-  grid-template-rows: 89px 318px;
+  grid-template-rows: 89px 1fr;
   gap: 20px;
 
 }
 
 .popular-menu {
   grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .popular-items {
-  margin: 0 auto;
-  padding: 0 0;
-  display: grid;
-  width: 940px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 0;
+
 }
 
 .item-first {
@@ -922,15 +1024,17 @@ grid-column: 1 / 3;
   width: 940px;
   margin: auto;
   padding: 0;
-  grid-template-rows: 89px 318px;
+  grid-template-rows: 89px 1fr;
   gap: 20px;
 }
 
 .brands {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  width: 940px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 0;
 }
 
 /*Сервисы*/
@@ -943,7 +1047,40 @@ grid-column: 1 / 3;
   display: grid;
   width: 940px;
   margin: 59px auto;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.3fr 0.7fr;
+  row-gap: 20px;
+  column-gap: 50px;
+}
+
+.services-header{
+  grid-column: 1 / 3;
+}
+
+
+.buttons-container {
+  display: inline-block;
+  width: min-content;
+  margin-top: 40px;
+}
+.services-buttons-container {
+  display: inline-block;
+  grid-column: 1 / 2 ;
+  grid-row: 2 / 3;
+}
+
+.services-description-text {
+  width: 300px;
+  height: 99px;
+}
+
+.services-car {
+  text-align: right;
+height: min-content;
+}
+
+.services-description {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 /*О компании*/
@@ -956,16 +1093,22 @@ grid-column: 1 / 3;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  grid-template-columns: 460px 460px;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
 
 .about-right {
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .about-left {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 /*Подвал*/
 
@@ -974,38 +1117,70 @@ grid-column: 1 / 3;
   background-color: var(--background-lighter-blue);
 }
 
+.footer-info-left {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-info-right {
+  display: flex;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-start: 0;
+  margin-top: 34px;
+  padding-inline-start: 0;
+  justify-content: space-between;
+}
+
+
 .footer-info-wrapper {
   display: grid;
   width: 940px;
   margin: 0 auto;
-  grid-template-columns: 360px 560px;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
+  padding-bottom: 54px;
 }
 
 .copyright-bar {
   background-color: var(--background-blue);
+  height: 107px;
 }
 
 .copyright-wrapper {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 107px;
   width: 940px;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .copyright-contacts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
 }
 
 .copyright-left {
-  position: relative
+  margin: 0;
 }
 
 .copyright-left p {
   margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%)
 }
 
+.navigation-yellow, .navigation-norm {
+  margin-left: 60px;
+}
+
+.navigation-norm:first-child {
+  margin-left: 0;
+}
+
+.navigation-yellow:nth-child(6) {
+  margin-left: 30px;
+}
