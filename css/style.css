@@ -571,8 +571,6 @@ h4 {
   margin-block-end: 0;
 }
 
-
-
 .footer-menu li {
   font-weight: normal;
   font-size: 18px;
@@ -960,7 +958,7 @@ color: var(--basic-red);
   width: 940px;
 }
 
-/*Гриды для мейнов*/
+/*Гриды и флексы для мейнов*/
 
 .menu {
   display: grid;
@@ -975,9 +973,19 @@ color: var(--basic-red);
   padding: 0;
 }
 
+.buttons-slider-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-top: 90px;
+}
+
 .slider {
 grid-column: 1 / 3;
   grid-row: 2 / 4;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
 }
 
 .popular {
@@ -1012,7 +1020,6 @@ grid-column: 1 / 3;
 
 .item-second {
   grid-column: 2 / 3;
-
 }
 
 .item-third {
@@ -1183,4 +1190,11 @@ height: min-content;
 
 .navigation-yellow:nth-child(6) {
   margin-left: 30px;
+}
+
+.slider {
+  background-image: url("../img/slider-worker.jpg");
+  background-repeat: no-repeat;
+  height: 266px;
+  width: 620px;
 }
