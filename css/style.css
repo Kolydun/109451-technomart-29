@@ -43,6 +43,7 @@
   --transparent-white-3: rgba(255, 255, 255, 0.3);
   --transparent-black: rgba(0, 0, 0, 0.3);
   --white-grey: #EAEAEA;
+  --dark-background-blue: #212A3A;
 }
 
 body, header, footer {
@@ -69,8 +70,8 @@ a {
 img {
   max-width: 100%;
   height: auto;
-  /*Верх шапки*/
 }
+/*Верх шапки*/
 
 .page-body {
   min-height: 100%;
@@ -98,9 +99,12 @@ img {
 }
 
 .header-links li a {
+  position: relative;
   display: inline-block;
   line-height: 42px;
-  padding: 0 25px;
+  padding: 0;
+  padding-left: 43px;
+  padding-right: 24px;
 }
 
 .header-link-comfirm {
@@ -110,8 +114,8 @@ img {
 }
 
 .search-line {
-  margin-right: 203px;
-  margin-left: 20px;
+  padding-left: 42px;
+  padding-right: 183px;
 }
 
 .header-link {
@@ -121,10 +125,16 @@ img {
 .header-links li {
   list-style-type: none;
   display: inline;
+  margin: 0;
 }
 
 .marks-header, .cart-header {
   margin: 0 15px;
+}
+
+.header-links li .confirm {
+  padding-left: 19px;
+  padding-right: 16px;
 }
 
  .cart-header a:focus,.marks-header a:focus {
@@ -141,11 +151,15 @@ img {
 .confirm:focus {
   background-color: var(--basic-green);
   color: var(--transparent-white);
-
 }
 
 .confirm {
   background-color: var(--basic-green);
+  width: 150px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Средняя часть шапки*/
@@ -178,6 +192,7 @@ img {
 
 .header-tel a {
   color: var(--basic-red);
+  position: relative;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -206,6 +221,7 @@ img {
 
 .login {
   margin-right: 10px;
+  position: relative;
 }
 
 .button-link {
@@ -281,10 +297,11 @@ img {
 }
 
 .menu li {
-  padding: 0 0;
+  padding: 0;
   margin: 0 0;
-
 }
+
+
 
 .menu-title {
   font-weight: bold;
@@ -293,6 +310,7 @@ img {
   color: var(--basic-white);
 }
 .menu-link {
+  position: relative;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -309,7 +327,6 @@ img {
 .menu-link:focus {
   background-color: var(--transparent-light-dark-grey);
 }
-
 
 .red-button {
   font-weight: normal;
@@ -332,6 +349,39 @@ img {
 
 .red-button:focus {
   background-color: var(--darkest-red);
+}
+
+.slider-heading {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 23px;
+}
+
+.slider-text {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 5px;
+}
+
+.slider a {
+  margin-bottom: 27px;
+}
+
+.slider div, .slider a {
+  margin-left: 25px;
 }
 
 .menu-materials {
@@ -384,7 +434,11 @@ h2 {
 
 .popular-items li, .catalog-products li {
   list-style-type: none;
+}
 
+.popular-items h3, .popular-items p {
+  margin-block-end: 0;
+  margin-block-start: 0;
 }
 
 .item {
@@ -393,7 +447,10 @@ h2 {
   border: 1px solid;
   border-color: var(--white-grey);
   margin: 0 0;
+}
 
+.item:hover {
+  box-shadow:0 0 15px -10px var(--basic-black);
 }
 
 .crossed {
@@ -402,20 +459,43 @@ h2 {
   line-height: 18px;
   color: var(--light-dark-grey);
   text-decoration: line-through;
+  text-align: center;
 }
 
 .price-bordered {
   font-weight: bold;
+  position: relative;
   font-size: 17px;
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  height: 38px;
+  width: 141px;
+  border: none;
 }
 
-.item-name {
+
+li .item-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+  text-align: center;
+}
+
+.item-first .item-name {
+  margin-top: 8px;
+}
+
+.item-second .item-name {
+  margin-top: 38px;
+}
+
+.item-third .item-name {
+  margin-top: 28px;
+}
+
+.item-last .item-name {
+  margin-top: 38px;
 }
 
 /*Популярные производители*/
@@ -462,6 +542,10 @@ h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-top: 64px;
+  margin-bottom: 25px;
 }
 
 .services-text {
@@ -471,6 +555,9 @@ h2 {
   line-height: 24px;
   width: 400px;
   height: 49px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-bottom: 50px;
 }
 
 h4 {
@@ -486,21 +573,33 @@ h4 {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
+  width: max-content;
 }
 
 .services-buttons {
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 24px;
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
   color: var(--basic-white);
   background-color: var(--background-lighter-blue);
-  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 240px;
+  height: 60px;
+}
+
+.services-buttons:hover {
+  background-color: var(--background-blue);
 }
 
 .services-buttons:focus {
   color: var(--basic-black);
   background-color: var(--basic-white);
+  outline: none;
+  border: none;
 }
 
 /*О компании*/
@@ -601,8 +700,27 @@ h4 {
   margin: 0 auto;
 }
 
+.social-media-container {
+  display: flex;
+}
+
 .social-media {
-  display: inline-block;
+  background: linear-gradient(0deg, var(--dark-background-blue), var(--dark-background-blue));
+  margin: 0 4px;
+  display: flex;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-media:focus {
+  background: var(--basic-red);
+}
+
+.social-media:hover {
+  background: var(--basic-red);
 }
 
 /*Нижний подвал*/
@@ -643,6 +761,8 @@ h4 {
   text-decoration: none;
   color: var(--basic-red);
 }
+
+
 
 /*Каталог*/
 
@@ -878,7 +998,7 @@ color: var(--basic-red);
 
 .header-top-wrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 940px;
   height: 42px;
   margin: 0 auto;
@@ -976,8 +1096,7 @@ color: var(--basic-red);
 .buttons-slider-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
-  margin-top: 90px;
+  padding: 0;
 }
 
 .slider {
@@ -985,7 +1104,19 @@ grid-column: 1 / 3;
   grid-row: 2 / 4;
   display: flex;
   flex-direction: column-reverse;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.slider-button-right {
+  transform: rotate(180deg);
+  background: none;
+  border: none;
+  margin-right: 20px;
+}
+
+.slider-button-left {
+  background: none;
+  border: none;
 }
 
 .popular {
@@ -1011,7 +1142,18 @@ grid-column: 1 / 3;
   justify-content: space-between;
   align-items: center;
   margin-block-start: 0;
+}
 
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end
+}
+
+.price-bordered {
+  margin-bottom: 21px;
+  margin-top: 13px;
 }
 
 .item-first {
@@ -1054,9 +1196,10 @@ grid-column: 1 / 3;
   display: grid;
   width: 940px;
   margin: 59px auto;
-  grid-template-columns: 0.3fr 0.7fr;
+  grid-template-columns: 0.2fr 1fr;
   row-gap: 20px;
   column-gap: 50px;
+  padding-bottom: 100px;
 }
 
 .services-header{
@@ -1064,13 +1207,18 @@ grid-column: 1 / 3;
 }
 
 
-.buttons-container {
-  display: inline-block;
-  width: min-content;
-  margin-top: 40px;
-}
+/*.buttons-container {*/
+/*  display: inline-block;*/
+/*  width: min-content;*/
+/*  margin-top: 40px;*/
+/*}*/
 .services-buttons-container {
-  display: inline-block;
+  position: relative;
+  display: flex;
+  width: min-content;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
   grid-column: 1 / 2 ;
   grid-row: 2 / 3;
 }
@@ -1088,6 +1236,10 @@ height: min-content;
 .services-description {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
 }
 
 /*О компании*/
@@ -1192,9 +1344,232 @@ height: min-content;
   margin-left: 30px;
 }
 
-.slider {
+.menu-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-box h2, .menu-box a {
+  margin-left: 23px;
+}
+
+.perf-slider {
+  visibility: hidden;
   background-image: url("../img/slider-worker.jpg");
   background-repeat: no-repeat;
   height: 266px;
   width: 620px;
+}
+
+.drill-slider {
+  visibility: visible;
+  background-image: url("../img/drill-worker.jpg");
+  background-repeat: no-repeat;
+  height: 266px;
+  width: 620px;
+}
+
+/*linear-gradient(45deg, white 25%, transparent 25%),
+    linear-gradient(315deg, white 25%, transparent 25%);*/
+
+/*Декорации*/
+.marks::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-bookmark.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 14px;
+  height: 16px;
+  top: 13px;
+  left: 20px;
+  opacity: 0.3;
+}
+
+.basket::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-cart.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 14px;
+  height: 16px;
+  top: 13px;
+  left: 20px;
+  opacity: 0.3;
+}
+
+.basket:hover::before, .marks:hover::before {
+  opacity: 1;
+}
+
+.basket:focus::before, .marks:focus::before {
+  opacity: 0.5;
+}
+
+.tel::before {
+  content: "";
+  height: 18.97px;
+  width: 17.51px;
+  top: 2px;
+  left: -40px;
+  position: absolute;
+  background-image: url("../img/icon-phone.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.button-login::before{
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-login.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 19px;
+  height: 17px;
+  top: 13px;
+  left: 10px;
+  opacity: 0.4;
+}
+
+.button-login:hover::before {
+  opacity: 1;
+}
+
+.instruments::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-instruments.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 75px;
+  height: 65px;
+  top: -30px;
+  left: 150px;
+}
+
+.materials::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-materials.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 44px;
+  height: 65px;
+  top: -30px;
+  left: 150px;
+}
+
+.vehicles::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-vehicles.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 78px;
+  height: 65px;
+  top: -40px;
+  left: 150px;
+}
+
+.discounts::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-discounts.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 59px;
+  height: 72px;
+  top: -45px;
+  left: 150px;
+}
+
+.delivery::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 78px;
+  height: 65px;
+  top: -40px;
+  left: 150px;
+}
+
+.service-guarantee {
+  visibility: hidden;
+}
+
+.service-credit {
+  visibility: visible;
+}
+
+.service-delivery {
+  visibility: hidden;
+}
+
+.red-button-credit {
+  border-radius: 5px;
+}
+
+.services-heading {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+.delivery-heading::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/delivery-car.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 468px;
+  height: 261px;
+  left: 185px;
+}
+
+.guarantee-heading::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/guarant-medal.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 468px;
+  height: 261px;
+  left: 290px;
+}
+
+.service-credit::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/credit-money.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 468px;
+  height: 261px;
+  left: 200px;
+}
+
+.price-bordered::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  border: 19px solid #ee3643;
+  border-right-width: 0;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.services-buttons-container::after{
+  content: "";
+  position: absolute;
+  background-image: url("../img/services-side-line.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 279px;
+  bottom: -44px;
 }

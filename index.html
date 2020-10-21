@@ -21,8 +21,8 @@
         </h1>
         <ul class="header-links">
           <li class="search-line">Поиска</li>
-          <li class="marks-header"><a class="header-link" href="">Закладки</a></li>
-          <li class="cart-header"><a class="header-link" href="">Корзина</a></li>
+          <li class="marks-header"><a class="header-link marks" href="">Закладки</a></li>
+          <li class="cart-header"><a class="header-link basket" href="">Корзина</a></li>
           <li class="cart-confirm"><a class="header-link confirm" href="">Оформить заказ</a></li>
         </ul>
       </div>
@@ -44,7 +44,7 @@
           </p>
         </div>
         <div class="header-buttons">
-          <div class="login"><a class="button-link" href="">Войти</a></div>
+          <div class="login"><a class="button-link button-login" href="">Войти</a></div>
           <div class="registration"><a class="button-link" href="">Регистрация</a></div>
         </div>
         <div class="main-nav-wrapper">
@@ -68,45 +68,55 @@
 <main>
   <section class="main-menu">
     <ul class="menu">
-      <li class="menu-materials">
+      <li class="menu-materials menu-box">
         <h2 class="menu-title">Материалы</h2>
-        <a href="" class="menu-link">
+        <a href="" class="menu-link materials">
           <span class="link-text">На любой вкус</span>
         </a>
-        <img src="https://via.placeholder.com/40x40" alt="Банка">
       </li>
-      <li class="menu-instruments"><h2 class="menu-title">Инструменты</h2>
-        <a href="" class="menu-link">
+      <li class="menu-instruments menu-box">
+        <h2 class="menu-title">Инструменты</h2>
+        <a href="" class="menu-link instruments">
           <span class="link-text">На все случаи</span>
         </a>
-        <img src="https://via.placeholder.com/40x40" alt="Дрель">
       </li>
-      <li class="menu-vehicles"><h2 class="menu-title">Техника</h2>
-        <a href="" class="menu-link">
-          <span class="link-text">Для стройки</span>
+      <li class="menu-vehicles menu-box"><h2 class="menu-title">Техника</h2>
+        <a href="" class="menu-link vehicles">
+          <span class="link-text ">Для стройки</span>
         </a>
-        <img src="https://via.placeholder.com/40x40" alt="Трактор">
       </li>
-      <li class="slider">
-        <!--<img src="img/slider-worker.jpg" height="266" width="620" alt="Рабочий с перфоратором">-->
-        <!--Тут будет слайдер, пока не знаю как его разметить-->
-        <a href="" class="red-button">открыть каталог</a> <!--Ссылка на каталог-->
+      <li class="slider perf-slider">
+        <a href="catalog.html" class="red-button">открыть каталог</a>
         <div class="buttons-slider-container">
-        <button type="button" class="button-left" disabled>Назад</button> <!--Кнопки будут на самом слайдере-->
-        <button type="button" class="button-right">Вперед</button> <!--Кнопки будут на самом слайдере-->
+          <button type="button" class="slider-button slider-button-left" disabled><img src="img/left-arrow.png">
+          </button>
+          <button type="button" class="slider-button slider-button-right"><img src="img/left-arrow.png"></button>
+        </div>
+        <div class="slider-top perf-top">
+          <h2 class="slider-heading perf-heading">Перфораторы</h2>
+          <p class="perf-text slider-text">Настоящие мужские игрушки</p>
         </div>
       </li>
-      <li class="menu-discounts"><h2 class="menu-title">Скидки 50%</h2>
-        <a href="" class="menu-link">
+      <li class="slider drill-slider">
+        <a href="catalog.html" class="red-button">открыть каталог</a>
+        <div class="buttons-slider-container">
+          <button type="button" class="slider-button slider-button-left" disabled><img src="img/left-arrow.png"></button>
+          <button type="button" class="slider-button slider-button-right"><img src="img/left-arrow.png"></button>
+        </div>
+        <div class="slider-top drill-top">
+          <h2 class=" slider-heading drill-heading">Дрели</h2>
+          <p class="drill-text slider-text">Соседям на радость</p>
+        </div>
+      </li>
+      <li class="menu-discounts menu-box"><h2 class="menu-title">Скидки 50%</h2>
+        <a href="" class="menu-link discounts">
           <span class="link-text">На 350 товаров</span>
         </a>
-        <img src="https://via.placeholder.com/40x40" alt="Корзинка">
       </li>
-      <li class="menu-delivery"><h2 class="menu-title">Доставка</h2>
-        <a href="" class="menu-link">
+      <li class="menu-delivery menu-box"><h2 class="menu-title">Доставка</h2>
+        <a href="" class="menu-link delivery">
           <span class="link-text">Бесплатно</span>
         </a>
-        <img src="https://via.placeholder.com/40x40" alt="Машинка">
       </li>
     </ul>
   </section>
@@ -122,7 +132,6 @@
         <h3 class="item-name">Перфоратор BOSCH<br>FG 9000<br></h3>
         <p class="crossed">32500 Р.</p>
         <button type="button" class="price-bordered">25500 Р.</button>
-        <!--По нажатию будет всплывать модaльное окно-->
       </li>
       <li class="item item-second">
         <div class="item-content">
@@ -130,19 +139,18 @@
           <h3 class="item-name">Перфоратор BOSCH<br>FG 3000<br></h3>
           <p class="crossed">22250 Р.</p>
           <button type="button" class="price-bordered">15500 Р.</button>
-          <!--По нажатию будет всплывать модaльное окно-->
         </div>
       </li>
       <li class="item item-third">
         <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class="perforator-6000">
         <h3 class="item-name">Перфоратор BOSCH<br>FG 6000<br></h3>
         <p class="crossed">30500 Р.</p>
-        <button type="button" class="price-bordered">25500 Р.</button><!--По нажатию будет всплывать модельное окно-->
+        <button type="button" class="price-bordered">25500 Р.</button>
       </li>
       <li class="item item-last">
         <img src="img/BFG-2000.jpg" width="127" height="112" alt="Перфоратор" class="perforator-2000">
         <h3 class="item-name">Перфоратор BOSCH<br>FG 2000<br></h3>
-        <button type="button" class="price-bordered">12500 Р.</button><!--По нажатию будет всплывать модaльное окно-->
+        <button type="button" class="price-bordered">12500 Р.</button>
     </ul>
     </div>
   </section>
@@ -202,26 +210,45 @@
           <p class="services-text">Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <div class="services-buttons-container">
-          <div class="buttons-container">
+       <div class="services-buttons-container">
             <button type="button" class="services-buttons">Доставка</button>
             <button type="button" class="services-buttons">Гарантия</button>
             <button type="button" class="services-buttons">Кредит</button>
-          </div>
-        </div>
-        <div class="services-description">
-          <h4>Доставка</h4>
+     </div>
+        <div class="services-description service-delivery">
+          <h4 class="services-heading delivery-heading">Доставка</h4>
           <div class="services-description-text">
             <p class="services-slider-text">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+              Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
+              Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!
             </p>
           </div>
-          <div class="services-car"><img src="https://via.placeholder.com/150x100" alt="машинка"></div>
+        </div>
+        <div class="services-description service-guarantee">
+          <h4 class="services-heading guarantee-heading">Гарантия</h4>
+          <div class="services-description-text">
+            <p class="services-slider-text">
+              Если купленный у нас товар поломается или заискрит,<br>
+              а также в случае пожара, спровоцированного его<br>
+              возгоранием, вы всегда можете быть уверены в<br>
+              нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
+              Дом уж восстановите как-нибудь сами.
+            </p>
+          </div>
+        </div>
+        <div class="services-description service-credit">
+          <h4 class="services-heading credit-heading">Кредит</h4>
+          <div class="services-description-text">
+            <p class="services-slider-text">
+              Залезть в долговую яму стало проще!<br>
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a href="" class="red-button red-button-credit">Отправить заявку</a>
+          </div>
         </div>
       </div>
     </div>
-    </section>
+  </section>
     <section class="about-company">
       <div class="about-left">
         <h2 class="about-title">Компания "Техномарт"</h2>
@@ -288,16 +315,16 @@
           <div class="copyright-left">
             <p class="copyright-text">&copy;2010-2019 Компания &laquo;Техномарт&raquo;<br>Все права защищены</p>
           </div>
-          <div class="media-container">
-          <!--<ul class="social-media-list">
-            <li class="social-media"><a href=""><img src="img/Vk.png" width="44" height="44" alt="ВК"></a></li>
-            <li class="social-media"><a href=""><img src="img/FB.png" width="44" height="44" alt="Фейсбук"></a></li>
-            <li class="social-media"><a href=""><img src="img/Instagram.png" width="44" height="44" alt="Инстаграм"></a>
-            </li>
-          </ul>-->
-           <a href=""><img src="img/Vk.png" width="44" height="44" alt="ВК"></a>
-            <a href=""><img src="img/FB.png" width="44" height="44" alt="Фейсбук"></a>
-            <a href=""><img src="img/Instagram.png" width="44" height="44" alt="Инстаграм"></a>
+          <div class="social-media-container">
+           <a href="" class="social-media">
+             <img src="img/vk-icon.png" class="vk-icon" width="26" height="15" alt="ВК">
+           </a>
+            <a href="" class="social-media">
+              <img src="img/fb-icon.png" class="fb-icon" width="12" height="22" alt="Фейсбук">
+            </a>
+            <a href="" class="social-media">
+              <img src="img/insta-icon.png" class="insta-icon" width="21" height="21" alt="Инстаграм">
+            </a>
           </div>
           <div class="copyright-contacts">
             <p class="footer-small footer-small-left">Обратная связь:<br><a href="">mail@htmlacademy.ru</a></p>
