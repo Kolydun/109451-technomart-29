@@ -460,6 +460,8 @@ h2 {
   color: var(--light-dark-grey);
   text-decoration: line-through;
   text-align: center;
+  margin-top: 7px;
+  margin-bottom: 13px;
 }
 
 .price-bordered {
@@ -482,21 +484,21 @@ li .item-name {
   text-align: center;
 }
 
-.item-first .item-name {
-  margin-top: 8px;
-}
+/*.item-first .item-name {*/
+/*  margin-top: 8px;*/
+/*}*/
 
-.item-second .item-name {
-  margin-top: 38px;
-}
+/*.item-second .item-name {*/
+/*  margin-top: 38px;*/
+/*}*/
 
-.item-third .item-name {
-  margin-top: 28px;
-}
+/*.item-third .item-name {*/
+/*  margin-top: 28px;*/
+/*}*/
 
-.item-last .item-name {
-  margin-top: 38px;
-}
+/*.item-last .item-name {*/
+/*  margin-top: 38px;*/
+/*}*/
 
 /*Популярные производители*/
 .brands-menu {
@@ -1148,13 +1150,13 @@ grid-column: 1 / 3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end
+  justify-content: center;
 }
 
-.price-bordered {
-  margin-bottom: 21px;
-  margin-top: 13px;
-}
+/*.price-bordered {*/
+/*  margin-bottom: 21px;*/
+/*  margin-top: 13px;*/
+/*}*/
 
 .item-first {
   grid-column: 1 / 2;
@@ -1572,4 +1574,12 @@ height: min-content;
   width: 10px;
   height: 279px;
   bottom: -44px;
+}
+
+.img-item {
+  height: 164px;
+  width: 184px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
