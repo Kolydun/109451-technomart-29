@@ -980,6 +980,31 @@ h4 {
 
 /*Каталог*/
 
+.log-out {
+  width: 299px;
+  height: 45px;
+  background-color: var(--basic-white);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.user-menu {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.user-name:focus {
+  color: var(--grey);
+}
+
+.user-menu a:focus {
+  color: var(--grey);
+}
+
+.user-menu a:hover {
+  color: var(--basic-red);
+}
+
 div .name {
   font-weight: normal;
   font-size: 21px;
@@ -1011,6 +1036,8 @@ div .name {
   font-size: 13px;
   line-height: 18px;
   list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
 }
 
 .breadcrumb li {
@@ -1024,9 +1051,8 @@ div .name {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  background-color: var(--light-blue-grey);
-  height: 89px;
-  width: 940px;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-top{
@@ -1037,9 +1063,12 @@ div .name {
 
 .sort-list {
   font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
+  margin: 0;
+  padding: 0;
 }
 
 .sort-list .sort-name {
@@ -1074,6 +1103,11 @@ color: var(--basic-red);
 }
 
 /*Фильтры*/
+.filters-list {
+  padding: 0;
+  margin: 0;
+}
+
 .filters-list li {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1085,9 +1119,15 @@ color: var(--basic-red);
  font-weight: bold;
 }
 
-.filter-heading {
+.filter-heading-left {
   background-color: var(--light-beige);
   width: 220px;
+  height: 38px;
+  margin-bottom: 14px;
+}
+.filter-heading-text {
+  padding-top: 10px;
+  padding-left: 18px;
 }
 
 .filter-button {
@@ -1095,6 +1135,16 @@ color: var(--basic-red);
   height: 38px;
   width: 220px;
   text-transform: uppercase;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 18px;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
 }
 
 /*Номера страниц*/
@@ -1106,6 +1156,10 @@ color: var(--basic-red);
   list-style: none;
   display: inline-block;
   border: 1px solid var(--very-light-grey);
+}
+.page-numbers {
+  margin: 0;
+  padding: 0;
 }
 
 .normal-button, .active-button {
@@ -1141,18 +1195,21 @@ color: var(--basic-red);
 }
 
 /*О перфораторах*/
-.about-items {
+.about-text {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: normal;
+  font-style: normal;
   font-size: 13px;
   line-height: 24px;
-  background-color: var(--blue-grey);
-  height: 261px;
-  width: 1200px;
 }
 .about-heading {
-  text-transform: uppercase;
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
   font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 64px;
 }
 /*Декорации*/
 
@@ -1284,7 +1341,7 @@ color: var(--basic-red);
   grid-template-rows: 1fr 60px;
   row-gap: 40px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
   width: 940px;
 }
 
@@ -1801,4 +1858,57 @@ height: min-content;
   background-image: url("../img/red-line.png");
   background-repeat: no-repeat;
   background-position: 0px 12px;
+}
+
+/*Гриды для каталога*/
+
+.catalog-container {
+  width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.breadcrumb {
+  grid-column: 1 / -1;
+}
+
+.catalog-heading-container {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+}
+
+.catalog-top{
+  grid-column: 2 / 3;
+}
+
+.about-items-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 25px;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.about-bar {
+  background-color: var(--blue-grey);
+  height: 261px;
+}
+
+.catalog-heading-container {
+  background-color: var(--light-blue-grey);
+  height: 89px;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+}
+
+.filters {
+  grid-row: 3 / 5;
+}
+
+.page-numbers-container {
+  grid-column: 2 / 3;
 }
