@@ -22,7 +22,7 @@
         <ul class="header-links">
           <li class="search-line">Поиск:</li>
           <li class="marks-header"><a class="header-link marks" href="">Закладки: 0</a></li>
-          <li class="cart-header"><a class="header-link basket" href="">Корзина: 0</a></li>
+          <li class="cart-header"><a class="header-link cart" href="">Корзина: 0</a></li>
           <li class="cart-confirm"><a class="header-link confirm" href="">Оформить заказ</a></li>
         </ul>
       </div>
@@ -73,10 +73,12 @@
 <main class="catalog">
   <div class="catalog-container">
     <ul class="breadcrumb">
-      <li class="breadcrumb-item"><a href="index.html"><img src="img/icon-home.png" width="14" height="12"></a></li>
+      <li class="breadcrumb-item"><a href="index.html">
+        <img src="img/icon-home.png" width="14" height="16" class="house-icon"></a>
+      </li>
       <li class="breadcrumb-item"><a href="">Каталог</a></li>
       <li class="breadcrumb-item"><a href="">Инструменты</a></li>
-      <li class="breadcrumb-item active">Парфораторы</li>
+      <li class="breadcrumb-item active">Пeрфораторы</li>
     </ul>
     <div class="catalog-heading-container">
       <h1 class="catalog-heading">Перфораторы</h1>
@@ -91,13 +93,17 @@
           <button type="button" class="sort-button">По типу</button>
         </li>
         <li class="sort-name">
-          <button type="button" class="sort-button">По функциям</button>
+          <button type="button" class="sort-button">По функционалу</button>
         </li>
         <li class="sort-name">
-          <button type="button" class="sort-button-updown">&#9650;</button>
+          <button type="button" class="sort-button-updown">
+            <img src="img/filter-trian.png" class="filter-left" height="10" width="11">
+          </button>
         </li>
         <li class="sort-name">
-          <button type="button" class="sort-button-updown">&#9660;</button>
+          <button type="button" class="sort-button-updown">
+            <img src="img/filter-trian.png" class="filter-right" height="10" width="11">
+          </button>
         </li>
       </ul>
     </section>
@@ -107,7 +113,7 @@
           <div class="filter-heading-left"><p class="filter-heading-text">Фильтр:</p></div>
         </li>
         <li class="filter-price">Цена:<!--Тут будет форма ползунка--></li>
-        <li class="filter-brand">Производитель: <!--Тут будет фильтр-чекбокс производителей--></li>
+        <li class="filter-brand">Производители: <!--Тут будет фильтр-чекбокс производителей--></li>
         <li class="filter-type">Питание: <!--Тут будет фильтр-кнопка--></li>
         <li>
           <button type="button" class="filter-button">Показать</button>
@@ -175,16 +181,16 @@
     </section>
     <div class="page-numbers-container">
       <ul class="page-numbers">
-        <li class="active-button">
+        <li class="active-button number-container">
           <a class="active-page">1</a>
         </li>
-        <li class="normal-button">
+        <li class="normal-button number-container">
           <a href="" class="basic-type">2</a>
         </li>
-        <li class="normal-button">
+        <li class="normal-button number-container">
           <a href="" class="basic-type">3</a>
         </li>
-        <li class="next-button">
+        <li class="next-button number-container">
           <a href="" class="next-page">Следующая</a>
         </li>
       </ul>
@@ -196,10 +202,10 @@
       <h2 class="about-heading">Пара слов о перфораторах</h2>
     <p class="about-text">
       Перфоратор&nbsp;&mdash; универсальный строительный инструмент.
-      Предназначен для сверления и долбления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне.
+      Предназначен для сверления и долбления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне.<br>
       Существуют электромеханические и&nbsp;пневматические перфораторы. Современные модели могут выполнять функции
       дрели,
-      шуруповёрта и&nbsp;отбойного молотка. В&nbsp;ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в&nbsp;одном
+      шуруповёрта и&nbsp;отбойного молотка.<br> В&nbsp;ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в&nbsp;одном
       устройстве будут совмещены отбойный молоток и&nbsp;ударная дрель.
     </p>
     </div>

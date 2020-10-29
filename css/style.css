@@ -108,7 +108,6 @@ img {
   position: relative;
   display: inline-block;
   line-height: 42px;
-  padding: 0;
 }
 
 .header-link-comfirm {
@@ -119,7 +118,7 @@ img {
 
 .search-line {
   position: relative;
-  margin-right: 227px;
+  margin-right: 185px;
 }
 
 .header-link {
@@ -132,12 +131,14 @@ img {
 }
 
 
-.marks-header {
-  margin-right: 73px;
+.marks{
+  padding-left: 43px;
+  padding-right: 24px;
 }
 
-.cart-header {
-  margin-right: 27px;
+.cart{
+  padding-left: 49px;
+  padding-right: 26px;
 }
 
 .header-links li .confirm {
@@ -190,7 +191,7 @@ padding: 0;
   width: 197px;
   margin: 0;
   margin-left: 30px;
-  margin-top: 42.5px;
+  margin-top: 46px;
 }
 
 .header-info {
@@ -219,7 +220,7 @@ padding: 0;
   outline-offset: -1px;
   margin-block-end: 0;
   margin-block-start: 0;
-  margin-top: 46px;
+  margin-top: 47px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -981,10 +982,15 @@ h4 {
 /*Каталог*/
 
 .log-out {
+  font-family: Cuprum, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 21px;
   width: 299px;
   height: 45px;
   background-color: var(--basic-white);
-  margin: 0 auto;
+  margin: 0;
   text-align: center;
 }
 
@@ -1031,18 +1037,39 @@ div .name {
 }
 
 .breadcrumb {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 18px;
-  list-style-type: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 0;
-  margin: 20px 0;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 18px;
 }
 
 .breadcrumb li {
   display: inline-block;
-  margin: 5px;
+}
+
+.breadcrumb-item {
+  margin-right: 41px;
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.breadcrumb-item:nth-child(3) {
+  margin-right: 32px;
+}
+
+.house-icon {
+  height: 16px;
+  width: 14px;
 }
 
 /*Фильтры*/
@@ -1053,9 +1080,13 @@ div .name {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin-left: 30px;
 }
 
 .catalog-top{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   background-color: var(--light-beige);
   height: 38px;
   width: 700px;
@@ -1073,8 +1104,37 @@ div .name {
 
 .sort-list .sort-name {
   display: inline-block;
-  padding: 5px;
   text-transform: uppercase;
+  padding: 0;
+}
+
+.sort-name:first-child {
+  margin-right: 137px;
+  margin-left: 20px;
+}
+
+.sort-name:nth-child(2) {
+  margin-right: 67px;
+}
+
+.sort-name:nth-child(3) {
+  margin-right: 62px;
+}
+
+.sort-name:nth-child(4) {
+  margin-right: 42px;
+}
+
+.sort-name:nth-child(5) {
+  margin-right: 18px;
+}
+.filter-left, .filter-right {
+  width: 11px;
+  height: 10px;
+}
+
+.filter-left {
+  transform: rotate(180deg);
 }
 
 .sort-button, .sort-button-updown {
@@ -1088,6 +1148,7 @@ div .name {
   outline: none;
   color: var(--transparent-black);
   border-bottom: 1px dotted var(--basic-red);
+  padding: 0;
 }
 .sort-button-updown {
   border: none;
@@ -1109,14 +1170,28 @@ color: var(--basic-red);
 }
 
 .filters-list li {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
   list-style-type: none;
+}
+
+.filter-price, .filter-brand, .filter-type {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
   text-transform: uppercase;
 }
-.filter-price, .filter-brand, .filter-type {
- font-weight: bold;
+
+.filter-price {
+  padding-bottom: 180px;
+}
+
+.filter-brand {
+  padding-bottom: 240px;
+}
+
+.filter-type {
+  padding-bottom: 120px;
 }
 
 .filter-heading-left {
@@ -1126,40 +1201,60 @@ color: var(--basic-red);
   margin-bottom: 14px;
 }
 .filter-heading-text {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
   padding-top: 10px;
   padding-left: 18px;
+  text-transform: uppercase;
 }
 
 .filter-button {
+  font-family: PT Sans, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
   background-color: transparent;
   height: 38px;
   width: 220px;
   text-transform: uppercase;
+  border: 1px solid var(--very-light-grey);
 }
 
 .items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 18px;
   padding: 0;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 29px;
+  padding-inline-start: 0;
 }
 
 /*Номера страниц*/
-.page-numbers li {
+.number-container{
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 18px;
   list-style: none;
   display: inline-block;
-  border: 1px solid var(--very-light-grey);
+  outline: 1px solid var(--very-light-grey);
+  outline-offset: -1px;
+  margin-right: 10px;
+
 }
 .page-numbers {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-top: 28px;
+  margin-bottom: 60px;
 }
 
 .normal-button, .active-button {
@@ -1209,7 +1304,7 @@ color: var(--basic-red);
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 64px;
+  padding-top: 65px;
 }
 /*Декорации*/
 
@@ -1285,6 +1380,8 @@ color: var(--basic-red);
   height: 42px;
   display: flex;
   align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
 .header-buttons {
@@ -1422,6 +1519,8 @@ li .buttons-slider-container {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 16px;
+  margin-right: 18px;
 }
 
 
@@ -1641,11 +1740,11 @@ height: min-content;
   width: 14px;
   height: 16px;
   top: 13px;
-  left: -23px;
+  left: 19px;
   opacity: 0.3;
 }
 
-.basket::before {
+.cart::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-cart.png");
@@ -1654,7 +1753,7 @@ height: min-content;
   width: 14px;
   height: 16px;
   top: 13px;
-  left: -23px;
+  left: 26px;
   opacity: 0.3;
 }
 
@@ -1671,11 +1770,11 @@ height: min-content;
   opacity: 0.3;
 }
 
-.basket:hover::before, .marks:hover::before {
+.cart:hover::before, .marks:hover::before {
   opacity: 1;
 }
 
-.basket:focus::before, .marks:focus::before {
+.cart:focus::before, .marks:focus::before {
   opacity: 0.5;
 }
 
@@ -1868,7 +1967,6 @@ height: min-content;
   display: grid;
   grid-template-columns: 220px 1fr;
   column-gap: 20px;
-  row-gap: 20px;
 }
 
 .breadcrumb {
@@ -1877,7 +1975,6 @@ height: min-content;
 
 .catalog-heading-container {
   grid-column: 1 / -1;
-  margin-bottom: 20px;
 }
 
 .catalog-top{
@@ -1902,7 +1999,11 @@ height: min-content;
   height: 89px;
   width: 940px;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .filters {
@@ -1911,4 +2012,63 @@ height: min-content;
 
 .page-numbers-container {
   grid-column: 2 / 3;
+}
+
+.header-account-buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.log-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 47px;
+  margin-left: 15px;
+}
+
+.number-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Декорации каталога*/
+
+.breadcrumb-item:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-breadcrumbs.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 7px;
+  left: 28px;
+  top: 3px
+}
+
+.breadcrumb-item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-breadcrumbs.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 7px;
+  left: 28px;
+  top: 1px
+}
+
+.breadcrumb-item:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-breadcrumbs.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 7px;
+  left: 28px;
+  top: 1px
 }
