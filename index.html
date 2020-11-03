@@ -15,12 +15,16 @@
     <div class="header-bar">
       <div class="header-top-wrapper">
         <h1 class="logo-header">
-          <div class="logo-container">
+          <div class="logo-container" tabindex="0">
             <img src="img/logo-technomart.png" height="18" width="108" alt="логотип" class="logo-picture-text">
           </div>
         </h1>
         <ul class="header-links">
-          <li class="search-line">Поиск:</li>
+          <li class="search-line">
+            <form>
+              <input type="search" name="search" id="search-line" placeholder="Поиск:">
+            </form>
+          </li>
           <li class="marks-header"><a class="header-link marks" href="">Закладки: 0</a></li>
           <li class="cart-header"><a class="header-link cart" href="">Корзина: 0</a></li>
           <li class="cart-confirm"><a class="header-link confirm" href="">Оформить заказ</a></li>
@@ -369,7 +373,7 @@
   </div>
 </footer>
 
-<section class="modal write-us">
+<section class="modal write-us visual-hidden">
   <div class="write-us-form">
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div class="form-top">

@@ -120,7 +120,6 @@ img {
 
 .search-line {
   position: relative;
-  margin-right: 185px;
 }
 
 .header-link {
@@ -1166,10 +1165,6 @@ div .name {
   height: 10px;
 }
 
-.filter-left {
-  transform: rotate(180deg);
-}
-
 .sort-button, .sort-button-updown {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: normal;
@@ -1187,13 +1182,15 @@ div .name {
   border: none;
 }
 
-.sort-button-updown:hover, .sort-button:hover, .sort-button:hover{
+.sort-button:hover, .sort-button:hover{
   color: var(--basic-black);
+  border-bottom: 1px solid var(--basic-red);
   text-decoration: none;
 }
 
-.sort-button-updown:focus, .sort-button:focus, .sort-button:focus {
+.sort-button:focus, .sort-button:focus {
 color: var(--basic-red);
+  border-bottom: none;
 }
 
 /*Фильтры*/
@@ -1810,19 +1807,6 @@ height: min-content;
   height: 16px;
   top: 13px;
   left: 26px;
-  opacity: 0.3;
-}
-
-.search-line::before {
-  content: "";
-  position: absolute;
-  background-image: url("../img/icon-search.png");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  width: 17px;
-  height: 17px;
-  left: -25px;
-  top: 2px;
   opacity: 0.3;
 }
 
@@ -2764,4 +2748,63 @@ input[type='number']::-webkit-outer-spin-button {
 
 #max-price {
   margin-left: 4px;
+}
+
+#search-line {
+  line-height: 42px;
+  width: 271px;
+  padding: 0;
+  margin: 0;
+  color: var(--basic-white);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding-left: 41px;
+  background-image: url("../img/icon-search-click.png");
+  background-repeat: no-repeat;
+  background-position: 17px 13px;
+}
+
+#search-line:hover{
+  background-image: url("../img/icon-search.png");
+  background-repeat: no-repeat;
+  background-position: 17px 13px;
+  opacity: 1;
+}
+
+#search-line:focus{
+  background-color: white;
+  color: black;
+  background-image: url("../img/icon-search-red.png");
+  background-repeat: no-repeat;
+  background-position: 17px 13px;
+}
+
+#search-line:focus::placeholder {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+#search-line:active {
+  background-image: url("../img/icon-search-click.png");
+  background-repeat: no-repeat;
+  background-position: 17px 13px;;
+  background-color: transparent;
+}
+
+#search-line:active::placeholder {
+  color: var(--basic-white);
+  opacity: 0.3;
+}
+
+#search-line::placeholder {
+  color: var(--basic-white);
+  opacity: 1;
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
 }
