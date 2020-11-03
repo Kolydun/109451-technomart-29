@@ -813,11 +813,17 @@ h4 {
   margin-left: 35px;
 }
 
+.about-map-link {
+  width: 300px;
+  height: 158px;
+  margin-top: 32px;
+  margin-left: 160px;
+  margin-bottom: 7px;
+}
+
 .about-map {
   height: 158px;
   width: 300px;
-  margin-top: 32px;
-  margin-left: 160px;
 }
 
 /*Подвал*/
@@ -991,6 +997,23 @@ h4 {
 
 
 /*Каталог*/
+.cart-catalog {
+  background-color: var(--basic-red);
+  padding-left: 36px;
+  padding-right: 21px;
+}
+
+.marks-catalog {
+  padding-right: 37px;
+}
+
+.cart-header .cart-catalog:hover {
+  background-color:  var(--dark-red);
+}
+
+.cart-header .cart-catalog:focus {
+  background-color: var(--darkest-red);
+}
 
 .log-out {
   font-family: Cuprum, Arial, sans-serif;
@@ -1810,6 +1833,20 @@ height: min-content;
   opacity: 0.3;
 }
 
+.cart-catalog::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-cart.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 14px;
+  height: 16px;
+  top: 13px;
+  left: 13px;
+  opacity: 0.3;
+}
+
+
 .cart:hover::before, .marks:hover::before {
   opacity: 1;
 }
@@ -2319,7 +2356,6 @@ height: min-content;
   position: relative;
   bottom: 55px;
   right: 3px;
-  display: none;
 }
 
 .to-basket {
@@ -2400,7 +2436,6 @@ height: min-content;
 
 /*Модальное окно каталог*/
 .modal-basket {
-  display: none;
   position: fixed;
   top: 300px;
   right: 0;

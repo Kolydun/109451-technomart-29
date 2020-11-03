@@ -136,9 +136,9 @@
       <a href="" class="red-button">Все популярные товары</a>
     </div>
     <div class="popular-items-container">
-      <ul class="popular-items">
+      <ul class="popular-items" id="catalog-items-list">
         <li class="item item-first">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -150,7 +150,7 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item item-second">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -162,7 +162,7 @@
           <button type="button" class="price-bordered">15500 Р.</button>
         </li>
         <li class="item item-third">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -174,7 +174,7 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item item-last">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -304,7 +304,11 @@
     <div class="about-right">
       <h2 class="about-title">Контакты</h2>
       <p class="map-text">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-      <a href=""><img src="img/main-map.png" class="about-map" alt="Карта" height="158" width="300"></a>
+      <a href="https://www.google.com/maps/place/Bolshaya+Konyushennaya+St,+19,+Sankt-Peterburg,+Russia,+191186/data=
+      !4m2!3m1!1s0x4696310fca5ba729:0xea9c53d4493c879f?sa=X&ved=2ahUKEwiS8-rsx-bsAhV-CRAIHYxFDWIQ8gEwAHoECAwQAQ"
+         class="about-map-link">
+        <img src="img/main-map.png" class="about-map" alt="Карта" height="158" width="300">
+      </a>
       <a href="" class="red-button-contact-us">Заблудились? Напишите нам!</a>
     </div>
   </section>
@@ -379,16 +383,17 @@
       <div class="form-top">
         <div class="form-name">
           <label for="user-name" class="user-name-field">Ваше Имя:</label>
-          <input type="text" name="Имя пользователя" id="user-name" placeholder="   Имя Фамилия">
+          <input type="text" name="Имя пользователя" id="user-name" placeholder="   Имя Фамилия" required>
         </div>
         <div class="form-email">
           <label for="user-email" class="user-email-field">Ваш e-mail:</label>
-          <input type="email" name="E-mail пользователя" id="user-email" placeholder="   email@example.com">
+          <input type="email" name="E-mail пользователя" id="user-email" placeholder="   email@example.com" required>
         </div>
       </div>
       <div class="form-message">
         <label for="user-text" class="user-text-field">Текст письма:</label>
-        <textarea name="Текст письма" id="user-text" rows="10" cols="10" placeholder="   В свободной форме"></textarea>
+        <textarea name="Текст письма" id="user-text" rows="10" cols="10" placeholder="   В свободной форме" required>
+        </textarea>
       </div>
     </form>
   </div>
@@ -409,5 +414,17 @@
   </div>
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
 </section>
+<section class="modal modal-basket visual-hidden">
+  <div class="modal-basket-text">
+    <p class="basket-text">Товар добавлен в корзину!</p>
+  </div>
+  <button class="modal-close modal-basket-close" type="button" aria-label="Закрыть"></button>
+  <div class="basket-buttons">
+    <a href="" class="basket-button basket-buttons-confirm">Оформить заказ</a>
+    <a href="" class="basket-button basket-buttons-continue"> Продолжить покупки</a>
+  </div>
+</section>
+<script src="js/main.js"></script>
+<script src="js/catalog.js"></script>
 </body>
 </html>

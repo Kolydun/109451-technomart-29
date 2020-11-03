@@ -21,10 +21,14 @@
           </div>
         </h1>
         <ul class="header-links">
-          <li class="search-line">Поиск:</li>
-          <li class="marks-header"><a class="header-link marks" href="">Закладки: 0</a></li>
-          <li class="cart-header"><a class="header-link cart" href="">Корзина: 0</a></li>
-          <li class="cart-confirm"><a class="header-link confirm" href="">Оформить заказ</a></li>
+          <li class="search-line">
+            <form>
+              <input type="search" name="search" id="search-line" placeholder="Поиск:">
+            </form>
+          </li>
+          <li class="marks-header"><a class="header-link marks marks-catalog" href="">Закладки: 0</a></li>
+          <li class="cart-header"><a class="header-link cart cart-catalog" href="">Корзина: 10</a></li>
+          <li class="cart-confirm"><a class="header-link confirm confirm-catalog" href="">Оформить заказ</a></li>
         </ul>
       </div>
     </div>
@@ -182,9 +186,9 @@
       </ul>
     </section>
     <section class="catalog-products">
-      <ul class="items">
+      <ul class="items" id="catalog-items-list">
         <li class="item">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -196,7 +200,7 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -208,7 +212,7 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -220,7 +224,7 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -232,7 +236,7 @@
           <button type="button" class="price-bordered">15500 Р.</button>
         </li>
         <li class="item">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -244,7 +248,7 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item item-last">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -255,7 +259,7 @@
           <button type="button" class="price-bordered">12500 Р.</button>
         </li>
         <li class="item">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -267,7 +271,7 @@
           <button type="button" class="price-bordered">15500 Р.</button>
         </li>
         <li class="item">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -279,7 +283,7 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item item-last">
-          <div class="item-hoover-buttons">
+          <div class="item-hoover-buttons visual-hidden">
             <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
@@ -388,15 +392,16 @@
     </section>
   </div>
 </footer>
-<section class="modal modal-basket">
+<section class="modal modal-basket visual-hidden">
   <div class="modal-basket-text">
     <p class="basket-text">Товар добавлен в корзину!</p>
   </div>
-  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  <button class="modal-close modal-basket-close" type="button" aria-label="Закрыть"></button>
   <div class="basket-buttons">
     <a href="" class="basket-button basket-buttons-confirm">Оформить заказ</a>
     <a href="" class="basket-button basket-buttons-continue"> Продолжить покупки</a>
   </div>
 </section>
+<script src="js/catalog.js"></script>
 </body>
 </html>
