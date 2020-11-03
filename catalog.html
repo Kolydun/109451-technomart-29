@@ -16,7 +16,8 @@
       <div class="header-top-wrapper">
         <h1 class="logo-header">
           <div class="logo-container">
-            <img src="img/logo-technomart.png" height="18" width="108" alt="логотип" class="logo-picture-text">
+            <a href="index.html"><img src="img/logo-technomart.png" height="18" width="108" alt="логотип"
+                                      class="logo-picture-text"></a>
           </div>
         </h1>
         <ul class="header-links">
@@ -27,7 +28,6 @@
         </ul>
       </div>
     </div>
-  </section>
   </section>
   <section class="header-middle">
     <div class="header-middle-bar">
@@ -55,7 +55,7 @@
         <div class="main-nav-wrapper">
           <nav class="main-nav">
             <ul class="navigation">
-              <li class="nav-item"><a class="nav-link" href="">Главная</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
               <li class="nav-item"><a class="nav-link" href="">Компания</a></li>
               <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
               <li class="nav-item"><a class="nav-link" href="">Новости</a></li>
@@ -74,7 +74,7 @@
   <div class="catalog-container">
     <ul class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">
-        <img src="img/icon-home.png" width="14" height="16" class="house-icon"></a>
+        <img src="img/icon-home.png" width="14" height="16" class="house-icon" alt="домашняя страница"></a>
       </li>
       <li class="breadcrumb-item"><a href="">Каталог</a></li>
       <li class="breadcrumb-item"><a href="">Инструменты</a></li>
@@ -97,12 +97,12 @@
         </li>
         <li class="sort-name">
           <button type="button" class="sort-button-updown">
-            <img src="img/filter-trian.png" class="filter-left" height="10" width="11">
+            <img src="img/filter-trian.png" class="filter-left" height="10" width="11" alt="стрелка вверх">
           </button>
         </li>
         <li class="sort-name">
           <button type="button" class="sort-button-updown">
-            <img src="img/filter-trian.png" class="filter-right" height="10" width="11">
+            <img src="img/filter-trian.png" class="filter-right" height="10" width="11" alt="стрелка вниз">
           </button>
         </li>
       </ul>
@@ -112,9 +112,70 @@
         <li class="filter">
           <div class="filter-heading-left"><p class="filter-heading-text">Фильтр:</p></div>
         </li>
-        <li class="filter-price">Цена:<!--Тут будет форма ползунка--></li>
-        <li class="filter-brand">Производители: <!--Тут будет фильтр-чекбокс производителей--></li>
-        <li class="filter-type">Питание: <!--Тут будет фильтр-кнопка--></li>
+        <li class="filter-price">
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <span>Цена:</span>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style=" width: 78%; margin-left: 5%">
+                  </div>
+                </div>
+                <div class="toggle toggle-min" style="left: 8%"></div>
+                <div class="toggle toggle-max" style="left: 73%"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  <input type="number" name="min-price" value="0" id="min-price">
+                </label>
+                <span>&mdash;</span>
+                <label class="max-price">
+                  <input type="number" name="max-price" value="30000" id="max-price">
+                </label>
+              </div>
+            </div>
+          </form>
+        </li>
+        <li class="filter-brand"><span>Производители:</span>
+          <form action="https://echo.htmlacademy.ru/" method="post" id="brand-checkboxes">
+            <div class="manufacturer-filter">
+              <div>
+                <input type="checkbox" name="manufacturer" id="manufacturer-BOSCH" class="custom-checkbox">
+                <label for="manufacturer-BOSCH"><span>BOSCH</span></label>
+              </div>
+              <div>
+                <input type="checkbox" name="manufacturer" id="manufacturer-ИНТЕРСКОЛ" class="custom-checkbox">
+                <label for="manufacturer-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
+              </div>
+              <div>
+                <input type="checkbox" name="manufacturer" id="manufacturer-MAKITA" class="custom-checkbox">
+                <label for="manufacturer-MAKITA">MAKITA</label>
+              </div>
+              <div>
+                <input type="checkbox" name="manufacturer" id="manufacturer-Dewalt" class="custom-checkbox">
+                <label for="manufacturer-Dewalt">Dewalt</label>
+              </div>
+              <div>
+                <input type="checkbox" name="manufacturer" id="manufacturer-Hitachi" class="custom-checkbox">
+                <label for="manufacturer-Hitachi">Hitachi</label>
+              </div>
+            </div>
+          </form>
+        </li>
+        <li class="filter-type"><span>Питание:</span>
+          <form action="https://echo.htmlacademy.ru/" method="post" id="type-checkboxes">
+            <div class="filter-types">
+              <div>
+                <input type="radio" name="power-type" id="power-battery" class="custom-radio">
+                <label for="power-battery"><span>Аккумуляторные</span></label>
+              </div>
+              <div>
+                <input type="radio" name="power-type" id="power-mains" class="custom-radio">
+                <label for="power-mains"><span>Сетевые</span></label>
+              </div>
+            </div>
+          </form>
+        </li>
         <li>
           <button type="button" class="filter-button">Показать</button>
         </li>
@@ -123,6 +184,10 @@
     <section class="catalog-products">
       <ul class="items">
         <li class="item">
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
           <div class="img-item">
             <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class=" perforator perforator-6000">
           </div>
@@ -131,6 +196,10 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item">
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
           <div class="img-item">
             <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class=" perforator perforator-6000">
           </div>
@@ -139,6 +208,10 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item">
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
           <div class="img-item">
             <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class=" perforator perforator-6000">
           </div>
@@ -147,6 +220,10 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item">
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
           <div class="img-item">
             <img src="img/BFG-3000.jpg" width="127" height="112" alt="Перфоратор" class=" perforator perforator-3000">
           </div>
@@ -155,6 +232,10 @@
           <button type="button" class="price-bordered">15500 Р.</button>
         </li>
         <li class="item">
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
           <div class="img-item">
             <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class=" perforator perforator-6000">
           </div>
@@ -163,6 +244,10 @@
           <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item item-last">
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
           <div class="img-item">
             <img src="img/BFG-2000.jpg" width="127" height="112" alt="Перфоратор" class=" perforator perforator-2000">
           </div>
@@ -170,6 +255,10 @@
           <button type="button" class="price-bordered">12500 Р.</button>
         </li>
         <li class="item">
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
           <div class="img-item">
             <img src="img/BFG-3000.jpg" width="127" height="112" alt="Перфоратор" class=" perforator perforator-3000">
           </div>
@@ -178,14 +267,22 @@
           <button type="button" class="price-bordered">15500 Р.</button>
         </li>
         <li class="item">
-        <div class="img-item">
-          <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class=" perforator perforator-6000">
-        </div>
-        <h3 class="item-name">Перфоратор BOSCH<br>BFG 6000<br></h3>
-        <p class="crossed">30500 Р.</p>
-        <button type="button" class="price-bordered">25500 Р.</button>
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
+          <div class="img-item">
+            <img src="img/BFG-6000.jpg" width="144" height="128" alt="Перфоратор" class=" perforator perforator-6000">
+          </div>
+          <h3 class="item-name">Перфоратор BOSCH<br>BFG 6000<br></h3>
+          <p class="crossed">30500 Р.</p>
+          <button type="button" class="price-bordered">25500 Р.</button>
         </li>
         <li class="item item-last">
+          <div class="item-hoover-buttons">
+            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="" class="mark">В закладки</a>
+          </div>
           <div class="img-item">
             <img src="img/BFG-2000.jpg" width="127" height="112" alt="Перфоратор" class=" perforator perforator-2000">
           </div>
@@ -213,17 +310,18 @@
   </div>
   <section class="about-items">
     <div class="about-bar">
-    <div class="about-items-wrapper">
-      <h2 class="about-heading">Пара слов о перфораторах</h2>
-    <p class="about-text">
-      Перфоратор&nbsp;&mdash; универсальный строительный инструмент.
-      Предназначен для сверления и долбления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне.<br>
-      Существуют электромеханические и&nbsp;пневматические перфораторы. Современные модели могут выполнять функции
-      дрели,
-      шуруповёрта и&nbsp;отбойного молотка.<br> В&nbsp;ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;: в&nbsp;одном
-      устройстве будут совмещены отбойный молоток и&nbsp;ударная дрель.
-    </p>
-    </div>
+      <div class="about-items-wrapper">
+        <h2 class="about-heading">Пара слов о перфораторах</h2>
+        <p class="about-text">
+          Перфоратор&nbsp;&mdash; универсальный строительный инструмент.
+          Предназначен для сверления и долбления отверстий в&nbsp;кирпиче, бетоне и&nbsp;камне.<br>
+          Существуют электромеханические и&nbsp;пневматические перфораторы. Современные модели могут выполнять функции
+          дрели,
+          шуруповёрта и&nbsp;отбойного молотка.<br> В&nbsp;ассортиментном ряду есть выбор &laquo;трехрежимников&raquo;:
+          в&nbsp;одном
+          устройстве будут совмещены отбойный молоток и&nbsp;ударная дрель.
+        </p>
+      </div>
     </div>
   </section>
 </main>
@@ -290,6 +388,15 @@
     </section>
   </div>
 </footer>
-
+<section class="modal modal-basket">
+  <div class="modal-basket-text">
+    <p class="basket-text">Товар добавлен в корзину!</p>
+  </div>
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  <div class="basket-buttons">
+    <a href="" class="basket-button basket-buttons-confirm">Оформить заказ</a>
+    <a href="" class="basket-button basket-buttons-continue"> Продолжить покупки</a>
+  </div>
+</section>
 </body>
 </html>
