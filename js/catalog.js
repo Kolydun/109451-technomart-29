@@ -6,6 +6,22 @@ const basketModal = document.querySelector('.modal-basket');
 const closeBasketModalButton = document.querySelector('.modal-basket-close')
 const contShoppingButton = document.querySelector('.basket-buttons-continue')
 
+
+closeBasketModalButton.addEventListener('click', function () {
+  basketModal.classList.add('visual-hidden')
+})
+
+contShoppingButton.addEventListener('click', function (evt) {
+  evt.preventDefault()
+  basketModal.classList.add('visual-hidden')
+})
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27 && !basketModal.classList.contains('visual-hidden')) {
+    evt.preventDefault();
+    basketModal.classList.add('visual-hidden');
+  }
+})
+
 function showItemMenu() {
   for (let i = 0; i < itemsList.length; i++) {
     itemsList[i].addEventListener('mouseover', function () {
@@ -39,15 +55,6 @@ function addToCart() {
     })
   }
 }
-
-closeBasketModalButton.addEventListener('click', function () {
-  basketModal.classList.add('visual-hidden')
-})
-
-contShoppingButton.addEventListener('click', function (evt) {
-  evt.preventDefault()
-  basketModal.classList.add('visual-hidden')
-})
 
 showItemMenu()
 hideItemMenu()
