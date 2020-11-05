@@ -1,7 +1,6 @@
 'use strict'
 
-const itemsList = document.getElementById("catalog-items-list").getElementsByTagName("li");
-const addToCartButton = document.querySelector('.to-basket');
+const itemsList = document.getElementById('catalog-items-list').getElementsByTagName('li');
 const basketModal = document.querySelector('.modal-basket');
 const closeBasketModalButton = document.querySelector('.modal-basket-close')
 const contShoppingButton = document.querySelector('.basket-buttons-continue')

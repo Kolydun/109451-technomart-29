@@ -3,7 +3,7 @@
 const writeUsButton = document.querySelector('.red-button-contact-us');
 const writeUsForm = document.querySelector('.write-us');
 const writeUsClose = document.querySelector('.modal-close');
-const itemsList = document.getElementById("catalog-items-list").getElementsByTagName("li");
+const itemsList = document.getElementById('catalog-items-list').getElementsByTagName('li');
 const basketModal = document.querySelector('.modal-basket');
 const closeBasketModalButton = document.querySelector('.modal-basket-close')
 const contShoppingButton = document.querySelector('.basket-buttons-continue')
@@ -11,7 +11,7 @@ const userName = document.querySelector('#user-name');
 const userEmail = document.querySelector('#user-email');
 const userMessage = document.querySelector('#user-text');
 let isStorageSupport = true;
-let storage = "";
+let storage = '';
 
 try {
   storage = localStorage.getItem('Имя пользователя');
@@ -58,9 +58,6 @@ window.addEventListener('keydown', function (evt) {
     evt.preventDefault();
     writeUsForm.classList.add('visual-hidden');
   }
-})
-
-window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27 && !basketModal.classList.contains('visual-hidden')) {
     evt.preventDefault();
     basketModal.classList.add('visual-hidden');
