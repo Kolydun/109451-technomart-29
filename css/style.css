@@ -101,12 +101,14 @@
   position: relative;
   display: inline-block;
   line-height: 42px;
+  vertical-align: middle;
 }
 
 .header-link-confirm {
   line-height: 42px;
   display: inline-block;
   padding: 0 19px;
+  vertical-align: middle;
 }
 
 .search-line {
@@ -1078,6 +1080,7 @@ div .name {
   line-height: 18px;
   display: inline-block;
   padding: 10px;
+  vertical-align: middle;
 }
 
 .catalog-header-link:hover {
@@ -1102,6 +1105,7 @@ div .name {
 
 .breadcrumb li {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .breadcrumb-item {
@@ -1168,6 +1172,7 @@ div .name {
   display: inline-block;
   text-transform: uppercase;
   padding: 0;
+  vertical-align: middle;
 }
 
 .sort-name:first-child {
@@ -1327,7 +1332,7 @@ div .name {
   outline: 1px solid var(--very-light-grey);
   outline-offset: -1px;
   margin-right: 10px;
-
+  vertical-align: middle;
 }
 
 .page-numbers {
@@ -2679,7 +2684,7 @@ li .buttons-slider-container {
   flex-shrink: 0;
   flex-grow: 0;
   background-repeat: no-repeat;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .custom-checkbox:checked + label::before {
@@ -2873,6 +2878,10 @@ li .buttons-slider-container {
 .search-line-input::-webkit-search-cancel-button,
 .search-line-input::-webkit-search-results-button,
 .search-line-input::-webkit-search-results-decoration {
+  display: none;
+}
+
+.search-line-name {
   display: none;
 }
 
