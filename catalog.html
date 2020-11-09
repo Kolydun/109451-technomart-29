@@ -7,7 +7,7 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page-body">
 <header class="main-header">
@@ -15,9 +15,10 @@
     <div class="header-bar">
       <div class="header-top-wrapper">
         <h1 class="logo-header">Техномарт</h1>
-        <div class="logo-container">
-          <a href="index.html"><img src="img/logo-technomart.png" height="18" width="108" alt="логотип"
-                                    class="logo-picture-text"></a>
+        <div class="logo-container" tabindex="0">
+          <a href="index.html">
+          <img src="img/logo-technomart.png" height="18" width="108" alt="логотип" class="logo-picture-text logo-catalog">
+          </a>
         </div>
         <ul class="header-links">
           <li class="search-line">
@@ -89,22 +90,22 @@
     </div>
     <section class="catalog-top">
       <ul class="sort-list">
-        <li class="sort-name"><p class="filter-heading">Сортировка:</p></li>
-        <li class="sort-name">
+        <li class="sort-name sort-title"><p class="filter-heading">Сортировка:</p></li>
+        <li class="sort-name by-price">
           <button type="button" class="sort-button">По цене</button>
         </li>
-        <li class="sort-name">
+        <li class="sort-name by-type">
           <button type="button" class="sort-button">По типу</button>
         </li>
-        <li class="sort-name">
+        <li class="sort-name by-functions">
           <button type="button" class="sort-button">По функционалу</button>
         </li>
-        <li class="sort-name">
+        <li class="sort-name by-price-arrows-left">
           <button type="button" class="sort-button-updown">
             <img src="img/filter-trian-red.png" height="10" width="11" alt="стрелка вверх">
           </button>
         </li>
-        <li class="sort-name">
+        <li class="sort-name by-price-arrows-right">
           <button type="button" class="sort-button-updown">
             <img src="img/filter-trian.png" height="10" width="11" alt="стрелка вниз">
           </button>
@@ -125,8 +126,8 @@
                   <div class="bar" style=" width: 78%; margin-left: 5%">
                   </div>
                 </div>
-                <div class="toggle toggle-min" style="left: 8%"></div>
-                <div class="toggle toggle-max" style="left: 73%"></div>
+                <div class="toggle toggle-min" style="left: 8%" aria-label="меньше"></div>
+                <div class="toggle toggle-max" style="left: 73%" aria-label="больше"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price">
@@ -144,23 +145,23 @@
           <form action="https://echo.htmlacademy.ru/" method="post" id="brand-checkboxes">
             <div class="manufacturer-filter">
               <div>
-                <input type="checkbox" name="manufacturer" id="manufacturer-BOSCH" class="custom-checkbox">
+                <input type="checkbox" name="manufacturer" id="manufacturer-BOSCH" class="custom-checkbox" checked disabled>
                 <label for="manufacturer-BOSCH"><span>BOSCH</span></label>
               </div>
               <div>
-                <input type="checkbox" name="manufacturer" id="manufacturer-ИНТЕРСКОЛ" class="custom-checkbox">
+                <input type="checkbox" name="manufacturer" id="manufacturer-ИНТЕРСКОЛ" class="custom-checkbox" disabled>
                 <label for="manufacturer-ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
               </div>
               <div>
-                <input type="checkbox" name="manufacturer" id="manufacturer-MAKITA" class="custom-checkbox">
+                <input type="checkbox" name="manufacturer" id="manufacturer-MAKITA" class="custom-checkbox" checked disabled>
                 <label for="manufacturer-MAKITA">MAKITA</label>
               </div>
               <div>
-                <input type="checkbox" name="manufacturer" id="manufacturer-Dewalt" class="custom-checkbox">
+                <input type="checkbox" name="manufacturer" id="manufacturer-Dewalt" class="custom-checkbox" disabled>
                 <label for="manufacturer-Dewalt">Dewalt</label>
               </div>
               <div>
-                <input type="checkbox" name="manufacturer" id="manufacturer-Hitachi" class="custom-checkbox">
+                <input type="checkbox" name="manufacturer" id="manufacturer-Hitachi" class="custom-checkbox" disabled>
                 <label for="manufacturer-Hitachi">Hitachi</label>
               </div>
             </div>
@@ -170,11 +171,11 @@
           <form action="https://echo.htmlacademy.ru/" method="post" id="type-checkboxes">
             <div class="filter-types">
               <div>
-                <input type="radio" name="power-type" id="power-battery" class="custom-radio">
+                <input type="radio" name="power-type" id="power-battery" class="custom-radio" checked disabled>
                 <label for="power-battery"><span>Аккумуляторные</span></label>
               </div>
               <div>
-                <input type="radio" name="power-type" id="power-mains" class="custom-radio">
+                <input type="radio" name="power-type" id="power-mains" class="custom-radio" disabled>
                 <label for="power-mains"><span>Сетевые</span></label>
               </div>
             </div>
@@ -189,7 +190,7 @@
       <ul class="items" id="catalog-items-list">
         <li class="item">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item">
@@ -201,7 +202,7 @@
         </li>
         <li class="item">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item">
@@ -213,7 +214,7 @@
         </li>
         <li class="item">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item new">
@@ -225,7 +226,7 @@
         </li>
         <li class="item">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item new">
@@ -237,7 +238,7 @@
         </li>
         <li class="item">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item">
@@ -249,7 +250,7 @@
         </li>
         <li class="item item-last">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item new">
@@ -260,7 +261,7 @@
         </li>
         <li class="item">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item new">
@@ -272,7 +273,7 @@
         </li>
         <li class="item">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item">
@@ -284,7 +285,7 @@
         </li>
         <li class="item item-last">
           <div class="item-hoover-buttons visual-hidden">
-            <a href="" class="to-basket"><span class="to-basket-text">Купить</span></a>
+            <a href="basket.html" class="to-basket"><span class="to-basket-text">Купить</span></a>
             <a href="" class="mark">В закладки</a>
           </div>
           <div class="img-item new">
@@ -350,15 +351,15 @@
           </div>
           <div class="footer-info-right">
             <ul class="footer-menu">
-              <li class="navigation-norm navigation-norm-first"><a href="">Компания</a></li>
-              <li class="navigation-norm"><a href="">Новости</a></li>
-              <li class="navigation-norm"><a href="catalog.html">Каталог</a></li>
-              <li class="navigation-norm"><a href="">Доставка</a></li>
-              <li class="navigation-norm navigation-norm-last"><a href="">Контакты</a></li>
-              <li class="navigation-yellow navigation-yellow-first"><a href="">Материалы</a></li>
-              <li class="navigation-yellow"><a href="">Техника</a></li>
-              <li class="navigation-yellow"><a href="">Инструмент</a></li>
-              <li class="navigation-yellow navigation-yellow-last"><a href="">Спецпредложения</a></li>
+              <li class="navigation-norm navigation-norm-first footer-about"><a href="">Компания</a></li>
+              <li class="navigation-norm footer-news"><a href="">Новости</a></li>
+              <li class="navigation-norm footer-catalog"><a href="catalog.html">Каталог</a></li>
+              <li class="navigation-norm footer-delivery"><a href="">Доставка</a></li>
+              <li class="navigation-norm navigation-norm-last footer-contact"><a href="">Контакты</a></li>
+              <li class="navigation-yellow navigation-yellow-first footer-materials"><a href="">Материалы</a></li>
+              <li class="navigation-yellow footer-vehicles"><a href="">Техника</a></li>
+              <li class="navigation-yellow footer-instruments"><a href="">Инструмент</a></li>
+              <li class="navigation-yellow navigation-yellow-last footer-special"><a href="">Спецпредложения</a></li>
             </ul>
           </div>
         </div>
@@ -402,6 +403,6 @@
     <a href="" class="basket-button basket-buttons-continue"> Продолжить покупки</a>
   </div>
 </section>
-<script src="js/catalog.js"></script>
+<script src="js/catal.mini.js"></script>
 </body>
 </html>
