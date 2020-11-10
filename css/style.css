@@ -2675,14 +2675,14 @@
   flex-shrink: 0;
   flex-grow: 0;
   background-repeat: no-repeat;
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .custom-checkbox:checked + label::before {
   background-image: url("../img/checkbox-on.png");
   width: 27px;
   height: 23px;
-  padding-right: 10px;
+  padding-right: 8px;
 }
 
 .filter-type {
