@@ -2271,7 +2271,7 @@
   width: 620px;
   border-top: 7px solid var(--basic-red);
   box-shadow: 0 0 15px -10px var(--basic-black);
-  top: 420px;
+  top: 20%;
   bottom: auto;
   right: 15px;
 }
